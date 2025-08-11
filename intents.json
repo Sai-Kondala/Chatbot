@@ -5,11 +5,10 @@
       "patterns": [
         "startup",
         "help",
-        "what can you do",
-        "startup message"
+        "what can you do"
       ],
       "responses": [
-        "Welcome to the Programming Helper Bot! I can help you with basic concepts in Python and Java. To see a full list of what I know, just ask 'what topics do you have?'"
+        "👋 Welcome to Programming Helper Bot — your friendly assistant for learning Python and Java.\n\nAsk me about language basics, data structures, OOP, concurrency, file I/O, and more. I provide clear explanations and code examples in both Python and Java.\n\nTry: \"Explain Python for loop\", \"How do Java classes work?\", or \"List all topics.\""
       ]
     },
     {
@@ -18,13 +17,10 @@
         "topics you have",
         "topics",
         "what can you answer",
-        "list all topics",
-        "give me some example questions",
-        "what can I ask",
-        "suggest a question"
+        "list all topics"
       ],
       "responses": [
-        "Here are all the topics I can currently help you with:\n- Greeting\n- Goodbye\n- Thanks\n- Python Variables\n- Python Data Types\n- Python For Loops\n- Python Functions\n- Java Variables\n- Java Data Types\n- Java Methods\n- Java Classes & Objects"
+        "Here are the topics I can help with (grouped):\n\nBasics:\n- python_variables\n- python_data_types\n- java_variables\n- java_data_types\n- syntax_and_basic_structure\n- variables_and_constants\n- data_types_primitive_and_composite\n- comments_and_documentation\n- type_casting_and_conversions\n\nData Types:\n- arrays_and_lists\n- strings\n- linked_lists\n- dictionaries___maps___hash_tables\n- sets\n- tuples_and_records\n- map_filter_reduce\n\nControl Flow:\n- python_for_loop\n- conditional_statements\n- loops\n- loop_control\n- event_loops\n\nFunctions:\n- python_functions\n- java_methods\n- function_declaration_and_calling\n- higherorder_functions\n- anonymous___lambda_functions\n- closures\n- method_overloading_and_overriding\n- pure_functions\n- firstclass_functions\n- decorators\n\nOOP:\n- java_classes_objects\n- classes_and_objects\n- inheritance\n- polymorphism\n- encapsulation\n- abstraction\n- constructors_and_destructors\n- interfaces_and_abstract_classes\n- enums_and_sealed_classes\n\nData Structures:\n- stacks_and_queues\n- trees\n- graphs\n- heaps_and_priority_queues\n- stack_vs_heap\n- rest_and_graphql\n\nConcurrency & Async:\n- threads_and_processes\n- synchronization\n- deadlocks_and_race_conditions\n- asynchronous_programming\n- parallel_processing\n- coroutines\n- preprocessor_directives\n\nI/O & Networking:\n- reading_and_writing_files\n- streams\n- serialization_and_deserialization\n- sockets\n- http_requests_and_apis\n- websockets\n\nTesting & Tools:\n- logging_and_debugging_tools\n- thirdparty_library_integration\n- dependency_management\n- unit_testing\n- integration_testing\n- benchmarking_and_profiling\n\nOther:\n- startup_message\n- topics_available\n- greeting\n- goodbye\n- thanks\n- fallback\n- operators_arithmetic_logical_bitwise\n- input_and_output\n- pattern_matching\n- error_handling_and_exceptions\n- parameters_and_arguments\n- return_values\n- scope\n- recursion\n- static_vs_instance_members\n- pointers_and_references\n- memory_allocation_and_deallocation\n- garbage_collection\n- smart_pointers\n- resource_acquisition_raii_pattern\n- generics___templates\n- reflection_and_introspection\n- macros_and_metaprogramming\n- operator_overloading\n- attributes___annotations\n- pattern_matching_and_destructuring\n- immutability\n- currying\n- monads_and_functors\n- lazy_evaluation\n- futures_and_promises\n- trycatchfinally\n- throwing_exceptions\n- custom_exception_types\n- assertions\n- working_with_directories\n- binary_vs_text_data\n- network_protocols\n- standard_library_usage\n- package_managers\n- memory_safety\n- modules_and_packages\n- testdriven_development\n- mocking_and_stubbing\n- code_style_and_formatting\n- dry_kiss_yagni_principles\n- refactoring\n- documentation\n- version_control\n- compilers_and_interpreters\n- virtual_machines\n- justintime_compilation\n- language_internals_and_parsing\n- design_patterns\n- domainspecific_languages"
       ]
     },
     {
@@ -36,14 +32,11 @@
         "good day",
         "greetings",
         "is anyone there?",
-        "what's up",
-        "greeting"
+        "whats up"
       ],
       "responses": [
-        "Hello! How can I help you with your Java or Python questions today?",
-        "Hey there! Ready to tackle some programming concepts?",
-        "Hi! What can I teach you about Java or Python?",
-        "Greetings! Ask me anything about Java or Python. I'm ready to help."
+        "Hello! 😊 What programming concept can I help you with today?",
+        "Hi there — ready to learn Python or Java? Ask me anything."
       ]
     },
     {
@@ -54,13 +47,11 @@
         "goodbye",
         "talk to you later",
         "I have to go",
-        "that's all"
+        "thats all"
       ],
       "responses": [
-        "Goodbye! Happy coding!",
-        "See you later! Keep up the great learning.",
-        "Bye! Don't hesitate to ask if you have more questions in the future.",
-        "Talk to you later! Have a great day."
+        "Goodbye — happy coding! If you need more help, just ask.",
+        "See you later! Keep practicing and come back with questions."
       ]
     },
     {
@@ -68,16 +59,14 @@
       "patterns": [
         "thanks",
         "thank you",
-        "that's helpful",
+        "thats helpful",
         "awesome, thanks",
         "great, thank you",
         "thanks a lot"
       ],
       "responses": [
-        "You're very welcome!",
-        "Happy to help! Is there anything else you'd like to know?",
-        "Glad I could be of assistance.",
-        "Anytime! Let me know if there's anything else."
+        "You're welcome — glad I could help!",
+        "Anytime. If you'd like, I can show more examples or exercises."
       ]
     },
     {
@@ -89,7 +78,7 @@
         "assign value in python"
       ],
       "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
+        "Python Variables\nPython Variables: Variables store values and have names. In Python types are dynamic; in Java variables must be declared with a type.\n\nKey points:\n- Python uses dynamic typing; assign directly: x = 1\n- Java requires type declarations: int x = 1;\n- Choose meaningful variable names and follow naming conventions.\n\nPython examples:\n```python\n# Python variables (dynamic typing)\nx = 42\nname = 'Alice'\nprint(x, name)\n```\n```python\n# Reassigning different types\nx = 10\nx = 'now a string'\nprint(x)\n```\n\nJava examples:\n```java\n// Java variables (static typing)\nint x = 42;\nString name = \"Alice\";\nSystem.out.println(x + \" \" + name);\n```\n\nCommon questions:\n- What is python variables?\n- How do I use python variables in Python and Java?\n- Show examples of python variables."
       ]
     },
     {
@@ -104,7 +93,7 @@
         "python set"
       ],
       "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
+        "Python Data Types\nPython Data Types: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is python data types?\n- How do I use python data types in Python and Java?\n- Show examples of python data types."
       ]
     },
     {
@@ -119,9 +108,7 @@
         "how do for loops work in python"
       ],
       "responses": [
-        "In Python, a 'for' loop is used for iterating over a sequence (like a list, tuple, or string). The basic syntax is: `for item in sequence:`",
-        "Here is a simple example that prints numbers 0 to 4:\n```python\nfor i in range(5):\n    print(i)\n```",
-        "To loop over a list, you can do this:\n```python\nmy_list = ['apple', 'banana', 'cherry']\nfor fruit in my_list:\n    print(fruit)\n```"
+        "Python For Loop\nPython For Loop: Loops let you repeat code. 'for' iterates over sequences; 'while' repeats while a condition holds.\n\nKey points:\n- Use for-loops to iterate over lists, ranges, or iterators.\n- While-loops are suited for unknown iteration counts with a condition.\n- Avoid infinite loops by ensuring loop conditions change.\n\nPython examples:\n```python\n# for loop over range\nfor i in range(5):\n    print(i)\n\n# iterate over a list\nfruits = ['apple','banana']\nfor f in fruits:\n    print(f)\n```\n\nJava examples:\n```java\n// for loop in Java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n\n// enhanced for-loop\nString[] fruits = {\"apple\",\"banana\"};\nfor (String f : fruits) System.out.println(f);\n```\n\nCommon questions:\n- What is python for loop?\n- How do I use python for loop in Python and Java?\n- Show examples of python for loop."
       ]
     },
     {
@@ -134,10 +121,7 @@
         "call a function python"
       ],
       "responses": [
-        "Functions in Python are defined using the `def` keyword, followed by the function name and parentheses `()`. The code block within every function starts with a colon `:` and is indented.",
-        "Here is how you define a simple function:\n```python\ndef greet():\n    print(\"Hello from a function!\")\n```",
-        "To call the function, you just use its name followed by parentheses:\n```python\ngreet() # This will print \"Hello from a function!\"\n```",
-        "You can also pass data, known as parameters, into a function:\n```python\ndef greet_person(name):\n    print(f\"Hello, {name}!\")\n\ngreet_person(\"Alice\") # Prints \"Hello, Alice!\"\n```"
+        "Python Functions\nPython Functions: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is python functions?\n- How do I use python functions in Python and Java?\n- Show examples of python functions."
       ]
     },
     {
@@ -151,10 +135,10 @@
         "explain java variables"
       ],
       "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
+        "Java Variables\nJava Variables: Variables store values and have names. In Python types are dynamic; in Java variables must be declared with a type.\n\nKey points:\n- Python uses dynamic typing; assign directly: x = 1\n- Java requires type declarations: int x = 1;\n- Choose meaningful variable names and follow naming conventions.\n\nPython examples:\n```python\n# Python variables (dynamic typing)\nx = 42\nname = 'Alice'\nprint(x, name)\n```\n```python\n# Reassigning different types\nx = 10\nx = 'now a string'\nprint(x)\n```\n\nJava examples:\n```java\n// Java variables (static typing)\nint x = 42;\nString name = \"Alice\";\nSystem.out.println(x + \" \" + name);\n```\n\nCommon questions:\n- What is java variables?\n- How do I use java variables in Python and Java?\n- Show examples of java variables."
       ]
     },
-     {
+    {
       "tag": "java_data_types",
       "patterns": [
         "java data types",
@@ -164,7 +148,7 @@
         "java array"
       ],
       "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
+        "Java Data Types\nJava Data Types: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is java data types?\n- How do I use java data types in Python and Java?\n- Show examples of java data types."
       ]
     },
     {
@@ -177,9 +161,7 @@
         "explain java methods"
       ],
       "responses": [
-        "A method in Java is a block of code that runs only when it is called. It's similar to a function in other languages. You can pass data, known as parameters, into a method.",
-        "Here is how you define a simple method within a class:\n```java\npublic class Main {\n  static void myMethod() {\n    System.out.println(\"Hello from myMethod!\");\n  }\n}\n```",
-        "To call the method, you use its name followed by parentheses and a semicolon:\n```java\nmyMethod(); // This will print \"Hello from myMethod!\"\n```"
+        "Java Methods\nJava Methods: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is java methods?\n- How do I use java methods in Python and Java?\n- Show examples of java methods."
       ]
     },
     {
@@ -192,17 +174,1185 @@
         "class vs object in java"
       ],
       "responses": [
-        "Java is an object-oriented programming language. Everything in Java is associated with classes and objects.",
-        "A Class is like a blueprint for creating objects. For example, you could have a `Car` class with variables like `color` and `model`.",
-        "An Object is an instance of a class. From the `Car` class blueprint, you could create actual car objects, like a red Ford or a blue Honda.",
-        "Here is a simple example:\n```java\n// This is the class (blueprint)\npublic class Car {\n  String color = \"red\";\n}\n\n// To create an object from the class:\nCar myCar = new Car();\nSystem.out.println(myCar.color); // Prints \"red\"\n```"
+        "Java Classes Objects\nJava Classes Objects: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is java classes objects?\n- How do I use java classes objects in Python and Java?\n- Show examples of java classes objects."
       ]
     },
     {
       "tag": "fallback",
-      "patterns": ["a", "b", "c"],
+      "patterns": [
+        "a",
+        "b",
+        "c"
+      ],
       "responses": [
-        "I'm sorry, I don't have information on that specific topic yet. You can try asking about topics like 'python for loop', 'java variables', or 'python functions'."
+        "I'm sorry, I don't have information on that exact topic yet. Try asking about Python loops, Java classes, or data types.",
+        "If you share the specific question, I can try to help or add it to the knowledge base."
+      ]
+    },
+    {
+      "tag": "syntax_and_basic_structure",
+      "patterns": [
+        "Syntax & basic structure",
+        "explain syntax & basic structure",
+        "what is syntax & basic structure"
+      ],
+      "responses": [
+        "Syntax And Basic Structure\nSyntax And Basic Structure: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is syntax and basic structure?\n- How do I use syntax and basic structure in Python and Java?\n- Show examples of syntax and basic structure."
+      ]
+    },
+    {
+      "tag": "variables_and_constants",
+      "patterns": [
+        "Variables & constants",
+        "explain variables & constants",
+        "what is variables & constants"
+      ],
+      "responses": [
+        "Variables And Constants\nVariables And Constants: Variables store values and have names. In Python types are dynamic; in Java variables must be declared with a type.\n\nKey points:\n- Python uses dynamic typing; assign directly: x = 1\n- Java requires type declarations: int x = 1;\n- Choose meaningful variable names and follow naming conventions.\n\nPython examples:\n```python\n# Python variables (dynamic typing)\nx = 42\nname = 'Alice'\nprint(x, name)\n```\n```python\n# Reassigning different types\nx = 10\nx = 'now a string'\nprint(x)\n```\n\nJava examples:\n```java\n// Java variables (static typing)\nint x = 42;\nString name = \"Alice\";\nSystem.out.println(x + \" \" + name);\n```\n\nCommon questions:\n- What is variables and constants?\n- How do I use variables and constants in Python and Java?\n- Show examples of variables and constants."
+      ]
+    },
+    {
+      "tag": "data_types_primitive_and_composite",
+      "patterns": [
+        "Data types primitive & composite",
+        "explain data types primitive & composite",
+        "what is data types primitive & composite"
+      ],
+      "responses": [
+        "Data Types Primitive And Composite\nData Types Primitive And Composite: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is data types primitive and composite?\n- How do I use data types primitive and composite in Python and Java?\n- Show examples of data types primitive and composite."
+      ]
+    },
+    {
+      "tag": "operators_arithmetic_logical_bitwise",
+      "patterns": [
+        "Operators arithmetic, logical, bitwise",
+        "explain operators arithmetic, logical, bitwise",
+        "what is operators arithmetic, logical, bitwise"
+      ],
+      "responses": [
+        "Operators Arithmetic Logical Bitwise\nOperators Arithmetic Logical Bitwise: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is operators arithmetic logical bitwise?\n- How do I use operators arithmetic logical bitwise in Python and Java?\n- Show examples of operators arithmetic logical bitwise."
+      ]
+    },
+    {
+      "tag": "input_and_output",
+      "patterns": [
+        "Input & output",
+        "explain input & output",
+        "what is input & output"
+      ],
+      "responses": [
+        "Input And Output\nInput And Output: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is input and output?\n- How do I use input and output in Python and Java?\n- Show examples of input and output."
+      ]
+    },
+    {
+      "tag": "comments_and_documentation",
+      "patterns": [
+        "Comments & documentation",
+        "explain comments & documentation",
+        "what is comments & documentation"
+      ],
+      "responses": [
+        "Comments And Documentation\nComments And Documentation: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is comments and documentation?\n- How do I use comments and documentation in Python and Java?\n- Show examples of comments and documentation."
+      ]
+    },
+    {
+      "tag": "type_casting_and_conversions",
+      "patterns": [
+        "Type casting & conversions",
+        "explain type casting & conversions",
+        "what is type casting & conversions"
+      ],
+      "responses": [
+        "Type Casting And Conversions\nType Casting And Conversions: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is type casting and conversions?\n- How do I use type casting and conversions in Python and Java?\n- Show examples of type casting and conversions."
+      ]
+    },
+    {
+      "tag": "conditional_statements",
+      "patterns": [
+        "Conditional statements",
+        "explain conditional statements",
+        "what is conditional statements"
+      ],
+      "responses": [
+        "Conditional Statements\nConditional Statements: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is conditional statements?\n- How do I use conditional statements in Python and Java?\n- Show examples of conditional statements."
+      ]
+    },
+    {
+      "tag": "loops",
+      "patterns": [
+        "Loops",
+        "explain loops",
+        "what is loops"
+      ],
+      "responses": [
+        "Loops\nLoops: Loops let you repeat code. 'for' iterates over sequences; 'while' repeats while a condition holds.\n\nKey points:\n- Use for-loops to iterate over lists, ranges, or iterators.\n- While-loops are suited for unknown iteration counts with a condition.\n- Avoid infinite loops by ensuring loop conditions change.\n\nPython examples:\n```python\n# for loop over range\nfor i in range(5):\n    print(i)\n\n# iterate over a list\nfruits = ['apple','banana']\nfor f in fruits:\n    print(f)\n```\n\nJava examples:\n```java\n// for loop in Java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n\n// enhanced for-loop\nString[] fruits = {\"apple\",\"banana\"};\nfor (String f : fruits) System.out.println(f);\n```\n\nCommon questions:\n- What is loops?\n- How do I use loops in Python and Java?\n- Show examples of loops."
+      ]
+    },
+    {
+      "tag": "loop_control",
+      "patterns": [
+        "Loop control",
+        "explain loop control",
+        "what is loop control"
+      ],
+      "responses": [
+        "Loop Control\nLoop Control: Loops let you repeat code. 'for' iterates over sequences; 'while' repeats while a condition holds.\n\nKey points:\n- Use for-loops to iterate over lists, ranges, or iterators.\n- While-loops are suited for unknown iteration counts with a condition.\n- Avoid infinite loops by ensuring loop conditions change.\n\nPython examples:\n```python\n# for loop over range\nfor i in range(5):\n    print(i)\n\n# iterate over a list\nfruits = ['apple','banana']\nfor f in fruits:\n    print(f)\n```\n\nJava examples:\n```java\n// for loop in Java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n\n// enhanced for-loop\nString[] fruits = {\"apple\",\"banana\"};\nfor (String f : fruits) System.out.println(f);\n```\n\nCommon questions:\n- What is loop control?\n- How do I use loop control in Python and Java?\n- Show examples of loop control."
+      ]
+    },
+    {
+      "tag": "pattern_matching",
+      "patterns": [
+        "Pattern matching",
+        "explain pattern matching",
+        "what is pattern matching"
+      ],
+      "responses": [
+        "Pattern Matching\nPattern Matching: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is pattern matching?\n- How do I use pattern matching in Python and Java?\n- Show examples of pattern matching."
+      ]
+    },
+    {
+      "tag": "error_handling_and_exceptions",
+      "patterns": [
+        "Error handling & exceptions",
+        "explain error handling & exceptions",
+        "what is error handling & exceptions"
+      ],
+      "responses": [
+        "Error Handling And Exceptions\nError Handling And Exceptions: Exceptions and error handling let you manage unexpected conditions without crashing the program.\n\nKey points:\n- Use try/except in Python and try/catch in Java.\n- Catch specific exceptions, not broad ones, when possible.\n- Clean up resources using finally (Java) or with/context managers (Python).\n\nPython examples:\n```python\ntry:\n    x = 1/0\nexcept ZeroDivisionError:\n    print('Division by zero')\nfinally:\n    print('cleanup')\n```\n\nJava examples:\n```java\ntry {\n    int x = 1/0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Division by zero\");\n} finally {\n    System.out.println(\"cleanup\");\n}\n```\n\nCommon questions:\n- What is error handling and exceptions?\n- How do I use error handling and exceptions in Python and Java?\n- Show examples of error handling and exceptions."
+      ]
+    },
+    {
+      "tag": "function_declaration_and_calling",
+      "patterns": [
+        "Function declaration & calling",
+        "explain function declaration & calling",
+        "what is function declaration & calling"
+      ],
+      "responses": [
+        "Function Declaration And Calling\nFunction Declaration And Calling: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is function declaration and calling?\n- How do I use function declaration and calling in Python and Java?\n- Show examples of function declaration and calling."
+      ]
+    },
+    {
+      "tag": "parameters_and_arguments",
+      "patterns": [
+        "Parameters & arguments",
+        "explain parameters & arguments",
+        "what is parameters & arguments"
+      ],
+      "responses": [
+        "Parameters And Arguments\nParameters And Arguments: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is parameters and arguments?\n- How do I use parameters and arguments in Python and Java?\n- Show examples of parameters and arguments."
+      ]
+    },
+    {
+      "tag": "return_values",
+      "patterns": [
+        "Return values",
+        "explain return values",
+        "what is return values"
+      ],
+      "responses": [
+        "Return Values\nReturn Values: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is return values?\n- How do I use return values in Python and Java?\n- Show examples of return values."
+      ]
+    },
+    {
+      "tag": "scope",
+      "patterns": [
+        "Scope",
+        "explain scope",
+        "what is scope"
+      ],
+      "responses": [
+        "Scope\nScope: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is scope?\n- How do I use scope in Python and Java?\n- Show examples of scope."
+      ]
+    },
+    {
+      "tag": "recursion",
+      "patterns": [
+        "Recursion",
+        "explain recursion",
+        "what is recursion"
+      ],
+      "responses": [
+        "Recursion\nRecursion: Recursion is when a function calls itself to solve subproblems. Ensure a base case to stop.\n\nKey points:\n- Always define a base case to avoid infinite recursion.\n- Recursion can simplify algorithms (e.g., tree traversal), but may use more stack space.\n- Convert to iterative solutions if recursion depth is a concern.\n\nPython examples:\n```python\n# factorial using recursion\ndef fact(n):\n    if n <= 1:\n        return 1\n    return n * fact(n-1)\nprint(fact(5))\n```\n\nJava examples:\n```java\n// factorial recursion\npublic static int fact(int n) {\n    if (n <= 1) return 1;\n    return n * fact(n-1);\n}\n```\n\nCommon questions:\n- What is recursion?\n- How do I use recursion in Python and Java?\n- Show examples of recursion."
+      ]
+    },
+    {
+      "tag": "higherorder_functions",
+      "patterns": [
+        "Higher-order functions",
+        "explain higher-order functions",
+        "what is higher-order functions"
+      ],
+      "responses": [
+        "Higherorder Functions\nHigherorder Functions: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is higherorder functions?\n- How do I use higherorder functions in Python and Java?\n- Show examples of higherorder functions."
+      ]
+    },
+    {
+      "tag": "anonymous___lambda_functions",
+      "patterns": [
+        "Anonymous lambda functions",
+        "explain anonymous lambda functions",
+        "what is anonymous lambda functions"
+      ],
+      "responses": [
+        "Anonymous Lambda Functions\nAnonymous Lambda Functions: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is anonymous lambda functions?\n- How do I use anonymous lambda functions in Python and Java?\n- Show examples of anonymous lambda functions."
+      ]
+    },
+    {
+      "tag": "closures",
+      "patterns": [
+        "Closures",
+        "explain closures",
+        "what is closures"
+      ],
+      "responses": [
+        "Closures\nClosures: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is closures?\n- How do I use closures in Python and Java?\n- Show examples of closures."
+      ]
+    },
+    {
+      "tag": "arrays_and_lists",
+      "patterns": [
+        "Arrays & lists",
+        "explain arrays & lists",
+        "what is arrays & lists"
+      ],
+      "responses": [
+        "Arrays And Lists\nArrays And Lists: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is arrays and lists?\n- How do I use arrays and lists in Python and Java?\n- Show examples of arrays and lists."
+      ]
+    },
+    {
+      "tag": "strings",
+      "patterns": [
+        "Strings",
+        "explain strings",
+        "what is strings"
+      ],
+      "responses": [
+        "Strings\nStrings: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is strings?\n- How do I use strings in Python and Java?\n- Show examples of strings."
+      ]
+    },
+    {
+      "tag": "stacks_and_queues",
+      "patterns": [
+        "Stacks & queues",
+        "explain stacks & queues",
+        "what is stacks & queues"
+      ],
+      "responses": [
+        "Stacks And Queues\nStacks And Queues: Stacks are LIFO structures; queues are FIFO. They are fundamental for algorithms and system design.\n\nKey points:\n- Use stack for backtracking, expression evaluation.\n- Use queue for BFS, buffering, producer-consumer scenarios.\n- Many languages have built-in list/deque structures for implementing them.\n\nPython examples:\n```python\n# stack using list\nstack = []\nstack.append(1)\nstack.append(2)\nprint(stack.pop())\n\n# queue using collections.deque\nfrom collections import deque\nq = deque()\nq.append(1)\nq.append(2)\nprint(q.popleft())\n```\n\nJava examples:\n```java\n// Stack and Queue in Java\njava.util.Stack<Integer> st = new java.util.Stack<>();\nst.push(1); st.push(2); System.out.println(st.pop());\n\njava.util.Queue<Integer> q = new java.util.LinkedList<>();\nq.add(1); q.add(2); System.out.println(q.remove());\n```\n\nCommon questions:\n- What is stacks and queues?\n- How do I use stacks and queues in Python and Java?\n- Show examples of stacks and queues."
+      ]
+    },
+    {
+      "tag": "linked_lists",
+      "patterns": [
+        "Linked lists",
+        "explain linked lists",
+        "what is linked lists"
+      ],
+      "responses": [
+        "Linked Lists\nLinked Lists: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is linked lists?\n- How do I use linked lists in Python and Java?\n- Show examples of linked lists."
+      ]
+    },
+    {
+      "tag": "dictionaries___maps___hash_tables",
+      "patterns": [
+        "Dictionaries maps hash tables",
+        "explain dictionaries maps hash tables",
+        "what is dictionaries maps hash tables"
+      ],
+      "responses": [
+        "Dictionaries Maps Hash Tables\nDictionaries Maps Hash Tables: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is dictionaries maps hash tables?\n- How do I use dictionaries maps hash tables in Python and Java?\n- Show examples of dictionaries maps hash tables."
+      ]
+    },
+    {
+      "tag": "sets",
+      "patterns": [
+        "Sets",
+        "explain sets",
+        "what is sets"
+      ],
+      "responses": [
+        "Sets\nSets: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is sets?\n- How do I use sets in Python and Java?\n- Show examples of sets."
+      ]
+    },
+    {
+      "tag": "trees",
+      "patterns": [
+        "Trees",
+        "explain trees",
+        "what is trees"
+      ],
+      "responses": [
+        "Trees\nTrees: Trees are hierarchical data structures with a root and child nodes. Commonly used are binary trees, BSTs, and heaps.\n\nKey points:\n- Binary trees have up to two children per node.\n- Binary Search Trees (BST) keep left < node < right for quick lookup.\n- Tree traversals: preorder, inorder, postorder (recursive or iterative).\n\nPython examples:\n```python\n# Simple binary tree node\nclass Node:\n    def __init__(self, v, left=None, right=None):\n        self.v = v; self.left = left; self.right = right\n# inorder traversal\ndef inorder(n):\n    if not n: return\n    inorder(n.left)\n    print(n.v)\n    inorder(n.right)\n```\n\nJava examples:\n```java\n// Simple tree node\nclass Node { int v; Node left, right; Node(int v){this.v=v;} }\n// inorder traversal omitted for brevity\n```\n\nCommon questions:\n- What is trees?\n- How do I use trees in Python and Java?\n- Show examples of trees."
+      ]
+    },
+    {
+      "tag": "graphs",
+      "patterns": [
+        "Graphs",
+        "explain graphs",
+        "what is graphs"
+      ],
+      "responses": [
+        "Graphs\nGraphs: Graphs model pairwise relationships between nodes (vertices). They can be directed/undirected and weighted/unweighted.\n\nKey points:\n- Representations: adjacency list (common) or adjacency matrix.\n- Key algorithms: BFS, DFS, Dijkstra, topological sort.\n- Be careful of cycles and visited sets when traversing.\n\nPython examples:\n```python\n# adjacency list representation\ng = {0: [1,2], 1: [2], 2: [0,3]}\n# simple BFS\nfrom collections import deque\ndef bfs(start):\n    q = deque([start]); seen = {start}\n    while q:\n        v = q.popleft(); print(v)\n        for w in g.get(v,[]):\n            if w not in seen:\n                seen.add(w); q.append(w)\n```\n\nJava examples:\n```java\n// adjacency list using ArrayList<ArrayList<Integer>>\n// BFS/DFS implementation omitted for brevity\n```\n\nCommon questions:\n- What is graphs?\n- How do I use graphs in Python and Java?\n- Show examples of graphs."
+      ]
+    },
+    {
+      "tag": "heaps_and_priority_queues",
+      "patterns": [
+        "Heaps & priority queues",
+        "explain heaps & priority queues",
+        "what is heaps & priority queues"
+      ],
+      "responses": [
+        "Heaps And Priority Queues\nHeaps And Priority Queues: Stacks are LIFO structures; queues are FIFO. They are fundamental for algorithms and system design.\n\nKey points:\n- Use stack for backtracking, expression evaluation.\n- Use queue for BFS, buffering, producer-consumer scenarios.\n- Many languages have built-in list/deque structures for implementing them.\n\nPython examples:\n```python\n# stack using list\nstack = []\nstack.append(1)\nstack.append(2)\nprint(stack.pop())\n\n# queue using collections.deque\nfrom collections import deque\nq = deque()\nq.append(1)\nq.append(2)\nprint(q.popleft())\n```\n\nJava examples:\n```java\n// Stack and Queue in Java\njava.util.Stack<Integer> st = new java.util.Stack<>();\nst.push(1); st.push(2); System.out.println(st.pop());\n\njava.util.Queue<Integer> q = new java.util.LinkedList<>();\nq.add(1); q.add(2); System.out.println(q.remove());\n```\n\nCommon questions:\n- What is heaps and priority queues?\n- How do I use heaps and priority queues in Python and Java?\n- Show examples of heaps and priority queues."
+      ]
+    },
+    {
+      "tag": "tuples_and_records",
+      "patterns": [
+        "Tuples & records",
+        "explain tuples & records",
+        "what is tuples & records"
+      ],
+      "responses": [
+        "Tuples And Records\nTuples And Records: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is tuples and records?\n- How do I use tuples and records in Python and Java?\n- Show examples of tuples and records."
+      ]
+    },
+    {
+      "tag": "classes_and_objects",
+      "patterns": [
+        "Classes & objects",
+        "explain classes & objects",
+        "what is classes & objects"
+      ],
+      "responses": [
+        "Classes And Objects\nClasses And Objects: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is classes and objects?\n- How do I use classes and objects in Python and Java?\n- Show examples of classes and objects."
+      ]
+    },
+    {
+      "tag": "inheritance",
+      "patterns": [
+        "Inheritance",
+        "explain inheritance",
+        "what is inheritance"
+      ],
+      "responses": [
+        "Inheritance\nInheritance: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is inheritance?\n- How do I use inheritance in Python and Java?\n- Show examples of inheritance."
+      ]
+    },
+    {
+      "tag": "polymorphism",
+      "patterns": [
+        "Polymorphism",
+        "explain polymorphism",
+        "what is polymorphism"
+      ],
+      "responses": [
+        "Polymorphism\nPolymorphism: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is polymorphism?\n- How do I use polymorphism in Python and Java?\n- Show examples of polymorphism."
+      ]
+    },
+    {
+      "tag": "encapsulation",
+      "patterns": [
+        "Encapsulation",
+        "explain encapsulation",
+        "what is encapsulation"
+      ],
+      "responses": [
+        "Encapsulation\nEncapsulation: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is encapsulation?\n- How do I use encapsulation in Python and Java?\n- Show examples of encapsulation."
+      ]
+    },
+    {
+      "tag": "abstraction",
+      "patterns": [
+        "Abstraction",
+        "explain abstraction",
+        "what is abstraction"
+      ],
+      "responses": [
+        "Abstraction\nAbstraction: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is abstraction?\n- How do I use abstraction in Python and Java?\n- Show examples of abstraction."
+      ]
+    },
+    {
+      "tag": "constructors_and_destructors",
+      "patterns": [
+        "Constructors & destructors",
+        "explain constructors & destructors",
+        "what is constructors & destructors"
+      ],
+      "responses": [
+        "Constructors And Destructors\nConstructors And Destructors: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is constructors and destructors?\n- How do I use constructors and destructors in Python and Java?\n- Show examples of constructors and destructors."
+      ]
+    },
+    {
+      "tag": "static_vs_instance_members",
+      "patterns": [
+        "Static vs instance members",
+        "explain static vs instance members",
+        "what is static vs instance members"
+      ],
+      "responses": [
+        "Static Vs Instance Members\nStatic Vs Instance Members: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is static vs instance members?\n- How do I use static vs instance members in Python and Java?\n- Show examples of static vs instance members."
+      ]
+    },
+    {
+      "tag": "method_overloading_and_overriding",
+      "patterns": [
+        "Method overloading & overriding",
+        "explain method overloading & overriding",
+        "what is method overloading & overriding"
+      ],
+      "responses": [
+        "Method Overloading And Overriding\nMethod Overloading And Overriding: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is method overloading and overriding?\n- How do I use method overloading and overriding in Python and Java?\n- Show examples of method overloading and overriding."
+      ]
+    },
+    {
+      "tag": "interfaces_and_abstract_classes",
+      "patterns": [
+        "Interfaces & abstract classes",
+        "explain interfaces & abstract classes",
+        "what is interfaces & abstract classes"
+      ],
+      "responses": [
+        "Interfaces And Abstract Classes\nInterfaces And Abstract Classes: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is interfaces and abstract classes?\n- How do I use interfaces and abstract classes in Python and Java?\n- Show examples of interfaces and abstract classes."
+      ]
+    },
+    {
+      "tag": "pointers_and_references",
+      "patterns": [
+        "Pointers & references",
+        "explain pointers & references",
+        "what is pointers & references"
+      ],
+      "responses": [
+        "Pointers And References\nPointers And References: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is pointers and references?\n- How do I use pointers and references in Python and Java?\n- Show examples of pointers and references."
+      ]
+    },
+    {
+      "tag": "memory_allocation_and_deallocation",
+      "patterns": [
+        "Memory allocation & deallocation",
+        "explain memory allocation & deallocation",
+        "what is memory allocation & deallocation"
+      ],
+      "responses": [
+        "Memory Allocation And Deallocation\nMemory Allocation And Deallocation: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is memory allocation and deallocation?\n- How do I use memory allocation and deallocation in Python and Java?\n- Show examples of memory allocation and deallocation."
+      ]
+    },
+    {
+      "tag": "garbage_collection",
+      "patterns": [
+        "Garbage collection",
+        "explain garbage collection",
+        "what is garbage collection"
+      ],
+      "responses": [
+        "Garbage Collection\nGarbage Collection: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is garbage collection?\n- How do I use garbage collection in Python and Java?\n- Show examples of garbage collection."
+      ]
+    },
+    {
+      "tag": "stack_vs_heap",
+      "patterns": [
+        "Stack vs heap",
+        "explain stack vs heap",
+        "what is stack vs heap"
+      ],
+      "responses": [
+        "Stack Vs Heap\nStack Vs Heap: Stacks are LIFO structures; queues are FIFO. They are fundamental for algorithms and system design.\n\nKey points:\n- Use stack for backtracking, expression evaluation.\n- Use queue for BFS, buffering, producer-consumer scenarios.\n- Many languages have built-in list/deque structures for implementing them.\n\nPython examples:\n```python\n# stack using list\nstack = []\nstack.append(1)\nstack.append(2)\nprint(stack.pop())\n\n# queue using collections.deque\nfrom collections import deque\nq = deque()\nq.append(1)\nq.append(2)\nprint(q.popleft())\n```\n\nJava examples:\n```java\n// Stack and Queue in Java\njava.util.Stack<Integer> st = new java.util.Stack<>();\nst.push(1); st.push(2); System.out.println(st.pop());\n\njava.util.Queue<Integer> q = new java.util.LinkedList<>();\nq.add(1); q.add(2); System.out.println(q.remove());\n```\n\nCommon questions:\n- What is stack vs heap?\n- How do I use stack vs heap in Python and Java?\n- Show examples of stack vs heap."
+      ]
+    },
+    {
+      "tag": "smart_pointers",
+      "patterns": [
+        "Smart pointers",
+        "explain smart pointers",
+        "what is smart pointers"
+      ],
+      "responses": [
+        "Smart Pointers\nSmart Pointers: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is smart pointers?\n- How do I use smart pointers in Python and Java?\n- Show examples of smart pointers."
+      ]
+    },
+    {
+      "tag": "resource_acquisition_raii_pattern",
+      "patterns": [
+        "Resource acquisition RAII pattern",
+        "explain resource acquisition raii pattern",
+        "what is resource acquisition raii pattern"
+      ],
+      "responses": [
+        "Resource Acquisition Raii Pattern\nResource Acquisition Raii Pattern: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is resource acquisition raii pattern?\n- How do I use resource acquisition raii pattern in Python and Java?\n- Show examples of resource acquisition raii pattern."
+      ]
+    },
+    {
+      "tag": "generics___templates",
+      "patterns": [
+        "Generics templates",
+        "explain generics templates",
+        "what is generics templates"
+      ],
+      "responses": [
+        "Generics Templates\nGenerics Templates: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is generics templates?\n- How do I use generics templates in Python and Java?\n- Show examples of generics templates."
+      ]
+    },
+    {
+      "tag": "reflection_and_introspection",
+      "patterns": [
+        "Reflection & introspection",
+        "explain reflection & introspection",
+        "what is reflection & introspection"
+      ],
+      "responses": [
+        "Reflection And Introspection\nReflection And Introspection: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is reflection and introspection?\n- How do I use reflection and introspection in Python and Java?\n- Show examples of reflection and introspection."
+      ]
+    },
+    {
+      "tag": "macros_and_metaprogramming",
+      "patterns": [
+        "Macros & metaprogramming",
+        "explain macros & metaprogramming",
+        "what is macros & metaprogramming"
+      ],
+      "responses": [
+        "Macros And Metaprogramming\nMacros And Metaprogramming: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is macros and metaprogramming?\n- How do I use macros and metaprogramming in Python and Java?\n- Show examples of macros and metaprogramming."
+      ]
+    },
+    {
+      "tag": "operator_overloading",
+      "patterns": [
+        "Operator overloading",
+        "explain operator overloading",
+        "what is operator overloading"
+      ],
+      "responses": [
+        "Operator Overloading\nOperator Overloading: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is operator overloading?\n- How do I use operator overloading in Python and Java?\n- Show examples of operator overloading."
+      ]
+    },
+    {
+      "tag": "attributes___annotations",
+      "patterns": [
+        "Attributes annotations",
+        "explain attributes annotations",
+        "what is attributes annotations"
+      ],
+      "responses": [
+        "Attributes Annotations\nAttributes Annotations: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is attributes annotations?\n- How do I use attributes annotations in Python and Java?\n- Show examples of attributes annotations."
+      ]
+    },
+    {
+      "tag": "pattern_matching_and_destructuring",
+      "patterns": [
+        "Pattern matching & destructuring",
+        "explain pattern matching & destructuring",
+        "what is pattern matching & destructuring"
+      ],
+      "responses": [
+        "Pattern Matching And Destructuring\nPattern Matching And Destructuring: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is pattern matching and destructuring?\n- How do I use pattern matching and destructuring in Python and Java?\n- Show examples of pattern matching and destructuring."
+      ]
+    },
+    {
+      "tag": "immutability",
+      "patterns": [
+        "Immutability",
+        "explain immutability",
+        "what is immutability"
+      ],
+      "responses": [
+        "Immutability\nImmutability: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is immutability?\n- How do I use immutability in Python and Java?\n- Show examples of immutability."
+      ]
+    },
+    {
+      "tag": "pure_functions",
+      "patterns": [
+        "Pure functions",
+        "explain pure functions",
+        "what is pure functions"
+      ],
+      "responses": [
+        "Pure Functions\nPure Functions: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is pure functions?\n- How do I use pure functions in Python and Java?\n- Show examples of pure functions."
+      ]
+    },
+    {
+      "tag": "firstclass_functions",
+      "patterns": [
+        "First-class functions",
+        "explain first-class functions",
+        "what is first-class functions"
+      ],
+      "responses": [
+        "Firstclass Functions\nFirstclass Functions: Functions (Python) or methods (Java) encapsulate reusable behavior. They can accept parameters and return values.\n\nKey points:\n- Define with def in Python; methods in Java belong to classes.\n- Keep functions focused: single responsibility.\n- Document parameters and return values.\n\nPython examples:\n```python\n# Python function\ndef add(a, b):\n    return a + b\nprint(add(2,3))\n```\n```python\n# Function with default and keyword args\ndef greet(name='User'):\n    print('Hello', name)\ngreet()\ngreet(name='Alice')\n```\n\nJava examples:\n```java\n// Java method example\npublic class Util {\n    public static int add(int a, int b) { return a + b; }\n    public static void main(String[] args) { System.out.println(add(2,3)); }\n}\n```\n\nCommon questions:\n- What is firstclass functions?\n- How do I use firstclass functions in Python and Java?\n- Show examples of firstclass functions."
+      ]
+    },
+    {
+      "tag": "currying",
+      "patterns": [
+        "Currying",
+        "explain currying",
+        "what is currying"
+      ],
+      "responses": [
+        "Currying\nCurrying: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is currying?\n- How do I use currying in Python and Java?\n- Show examples of currying."
+      ]
+    },
+    {
+      "tag": "map_filter_reduce",
+      "patterns": [
+        "Map, filter, reduce",
+        "explain map, filter, reduce",
+        "what is map, filter, reduce"
+      ],
+      "responses": [
+        "Map Filter Reduce\nMap Filter Reduce: Data types represent the kind of values a variable can hold. Python has built-in dynamic types; Java has primitives and reference types.\n\nKey points:\n- Common Python types: int, float, str, list, dict, tuple, set, bool\n- Java has primitive types (int, double, boolean, char) and classes (String, arrays, collections)\n- Use appropriate types to reflect the data and operations you need.\n\nPython examples:\n```python\n# Python basic types\nn = 5\nf = 3.14\ns = 'hello'\nlst = [1, 2, 3]\nd = {'name': 'Alice'}\nprint(type(n), type(f), type(s), type(lst), type(d))\n```\n\nJava examples:\n```java\n// Java basic types\nint n = 5;\ndouble f = 3.14;\nString s = \"hello\";\nint[] arr = {1,2,3};\nSystem.out.println(n + \", \" + f + \", \" + s);\n```\n\nCommon questions:\n- What is map filter reduce?\n- How do I use map filter reduce in Python and Java?\n- Show examples of map filter reduce."
+      ]
+    },
+    {
+      "tag": "monads_and_functors",
+      "patterns": [
+        "Monads & functors",
+        "explain monads & functors",
+        "what is monads & functors"
+      ],
+      "responses": [
+        "Monads And Functors\nMonads And Functors: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is monads and functors?\n- How do I use monads and functors in Python and Java?\n- Show examples of monads and functors."
+      ]
+    },
+    {
+      "tag": "lazy_evaluation",
+      "patterns": [
+        "Lazy evaluation",
+        "explain lazy evaluation",
+        "what is lazy evaluation"
+      ],
+      "responses": [
+        "Lazy Evaluation\nLazy Evaluation: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is lazy evaluation?\n- How do I use lazy evaluation in Python and Java?\n- Show examples of lazy evaluation."
+      ]
+    },
+    {
+      "tag": "threads_and_processes",
+      "patterns": [
+        "Threads & processes",
+        "explain threads & processes",
+        "what is threads & processes"
+      ],
+      "responses": [
+        "Threads And Processes\nThreads And Processes: File I/O covers reading from and writing to files, and working with directories and streams.\n\nKey points:\n- Use with/open context managers in Python to ensure files close.\n- In Java use try-with-resources (since Java 7) or Streams APIs.\n- Be mindful of text vs binary modes and encoding (UTF-8).\n\nPython examples:\n```python\n# write and read\nwith open('example.txt','w',encoding='utf-8') as f:\n    f.write('hello')\nwith open('example.txt','r',encoding='utf-8') as f:\n    print(f.read())\n```\n\nJava examples:\n```java\nimport java.nio.file.*;\nFiles.writeString(Path.of(\"example.txt\"), \"hello\");\nSystem.out.println(Files.readString(Path.of(\"example.txt\")));\n```\n\nCommon questions:\n- What is threads and processes?\n- How do I use threads and processes in Python and Java?\n- Show examples of threads and processes."
+      ]
+    },
+    {
+      "tag": "synchronization",
+      "patterns": [
+        "Synchronization",
+        "explain synchronization",
+        "what is synchronization"
+      ],
+      "responses": [
+        "Synchronization\nSynchronization: Concurrency covers threads/processes and coordination primitives to run tasks in parallel or concurrently.\n\nKey points:\n- Use threads for concurrent tasks; processes for isolation.\n- Be careful with shared mutable state: use locks or thread-safe structures.\n- Watch for deadlocks and race conditions; design locking order carefully.\n\nPython examples:\n```python\nimport threading\n\ndef work(i):\n    print('work', i)\n\nthreads = []\nfor i in range(3):\n    t = threading.Thread(target=work, args=(i,))\n    t.start(); threads.append(t)\nfor t in threads: t.join()\n```\n\nJava examples:\n```java\nThread t = new Thread(() -> System.out.println(\"working\"));\nt.start();\nt.join();\n```\n\nCommon questions:\n- What is synchronization?\n- How do I use synchronization in Python and Java?\n- Show examples of synchronization."
+      ]
+    },
+    {
+      "tag": "deadlocks_and_race_conditions",
+      "patterns": [
+        "Deadlocks & race conditions",
+        "explain deadlocks & race conditions",
+        "what is deadlocks & race conditions"
+      ],
+      "responses": [
+        "Deadlocks And Race Conditions\nDeadlocks And Race Conditions: Concurrency covers threads/processes and coordination primitives to run tasks in parallel or concurrently.\n\nKey points:\n- Use threads for concurrent tasks; processes for isolation.\n- Be careful with shared mutable state: use locks or thread-safe structures.\n- Watch for deadlocks and race conditions; design locking order carefully.\n\nPython examples:\n```python\nimport threading\n\ndef work(i):\n    print('work', i)\n\nthreads = []\nfor i in range(3):\n    t = threading.Thread(target=work, args=(i,))\n    t.start(); threads.append(t)\nfor t in threads: t.join()\n```\n\nJava examples:\n```java\nThread t = new Thread(() -> System.out.println(\"working\"));\nt.start();\nt.join();\n```\n\nCommon questions:\n- What is deadlocks and race conditions?\n- How do I use deadlocks and race conditions in Python and Java?\n- Show examples of deadlocks and race conditions."
+      ]
+    },
+    {
+      "tag": "asynchronous_programming",
+      "patterns": [
+        "Asynchronous programming",
+        "explain asynchronous programming",
+        "what is asynchronous programming"
+      ],
+      "responses": [
+        "Asynchronous Programming\nAsynchronous Programming: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is asynchronous programming?\n- How do I use asynchronous programming in Python and Java?\n- Show examples of asynchronous programming."
+      ]
+    },
+    {
+      "tag": "event_loops",
+      "patterns": [
+        "Event loops",
+        "explain event loops",
+        "what is event loops"
+      ],
+      "responses": [
+        "Event Loops\nEvent Loops: Loops let you repeat code. 'for' iterates over sequences; 'while' repeats while a condition holds.\n\nKey points:\n- Use for-loops to iterate over lists, ranges, or iterators.\n- While-loops are suited for unknown iteration counts with a condition.\n- Avoid infinite loops by ensuring loop conditions change.\n\nPython examples:\n```python\n# for loop over range\nfor i in range(5):\n    print(i)\n\n# iterate over a list\nfruits = ['apple','banana']\nfor f in fruits:\n    print(f)\n```\n\nJava examples:\n```java\n// for loop in Java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n\n// enhanced for-loop\nString[] fruits = {\"apple\",\"banana\"};\nfor (String f : fruits) System.out.println(f);\n```\n\nCommon questions:\n- What is event loops?\n- How do I use event loops in Python and Java?\n- Show examples of event loops."
+      ]
+    },
+    {
+      "tag": "futures_and_promises",
+      "patterns": [
+        "Futures & promises",
+        "explain futures & promises",
+        "what is futures & promises"
+      ],
+      "responses": [
+        "Futures And Promises\nFutures And Promises: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is futures and promises?\n- How do I use futures and promises in Python and Java?\n- Show examples of futures and promises."
+      ]
+    },
+    {
+      "tag": "parallel_processing",
+      "patterns": [
+        "Parallel processing",
+        "explain parallel processing",
+        "what is parallel processing"
+      ],
+      "responses": [
+        "Parallel Processing\nParallel Processing: Concurrency covers threads/processes and coordination primitives to run tasks in parallel or concurrently.\n\nKey points:\n- Use threads for concurrent tasks; processes for isolation.\n- Be careful with shared mutable state: use locks or thread-safe structures.\n- Watch for deadlocks and race conditions; design locking order carefully.\n\nPython examples:\n```python\nimport threading\n\ndef work(i):\n    print('work', i)\n\nthreads = []\nfor i in range(3):\n    t = threading.Thread(target=work, args=(i,))\n    t.start(); threads.append(t)\nfor t in threads: t.join()\n```\n\nJava examples:\n```java\nThread t = new Thread(() -> System.out.println(\"working\"));\nt.start();\nt.join();\n```\n\nCommon questions:\n- What is parallel processing?\n- How do I use parallel processing in Python and Java?\n- Show examples of parallel processing."
+      ]
+    },
+    {
+      "tag": "trycatchfinally",
+      "patterns": [
+        "Try-catch-finally",
+        "explain try-catch-finally",
+        "what is try-catch-finally"
+      ],
+      "responses": [
+        "Trycatchfinally\nTrycatchfinally: Exceptions and error handling let you manage unexpected conditions without crashing the program.\n\nKey points:\n- Use try/except in Python and try/catch in Java.\n- Catch specific exceptions, not broad ones, when possible.\n- Clean up resources using finally (Java) or with/context managers (Python).\n\nPython examples:\n```python\ntry:\n    x = 1/0\nexcept ZeroDivisionError:\n    print('Division by zero')\nfinally:\n    print('cleanup')\n```\n\nJava examples:\n```java\ntry {\n    int x = 1/0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Division by zero\");\n} finally {\n    System.out.println(\"cleanup\");\n}\n```\n\nCommon questions:\n- What is trycatchfinally?\n- How do I use trycatchfinally in Python and Java?\n- Show examples of trycatchfinally."
+      ]
+    },
+    {
+      "tag": "throwing_exceptions",
+      "patterns": [
+        "Throwing exceptions",
+        "explain throwing exceptions",
+        "what is throwing exceptions"
+      ],
+      "responses": [
+        "Throwing Exceptions\nThrowing Exceptions: Exceptions and error handling let you manage unexpected conditions without crashing the program.\n\nKey points:\n- Use try/except in Python and try/catch in Java.\n- Catch specific exceptions, not broad ones, when possible.\n- Clean up resources using finally (Java) or with/context managers (Python).\n\nPython examples:\n```python\ntry:\n    x = 1/0\nexcept ZeroDivisionError:\n    print('Division by zero')\nfinally:\n    print('cleanup')\n```\n\nJava examples:\n```java\ntry {\n    int x = 1/0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Division by zero\");\n} finally {\n    System.out.println(\"cleanup\");\n}\n```\n\nCommon questions:\n- What is throwing exceptions?\n- How do I use throwing exceptions in Python and Java?\n- Show examples of throwing exceptions."
+      ]
+    },
+    {
+      "tag": "custom_exception_types",
+      "patterns": [
+        "Custom exception types",
+        "explain custom exception types",
+        "what is custom exception types"
+      ],
+      "responses": [
+        "Custom Exception Types\nCustom Exception Types: Exceptions and error handling let you manage unexpected conditions without crashing the program.\n\nKey points:\n- Use try/except in Python and try/catch in Java.\n- Catch specific exceptions, not broad ones, when possible.\n- Clean up resources using finally (Java) or with/context managers (Python).\n\nPython examples:\n```python\ntry:\n    x = 1/0\nexcept ZeroDivisionError:\n    print('Division by zero')\nfinally:\n    print('cleanup')\n```\n\nJava examples:\n```java\ntry {\n    int x = 1/0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Division by zero\");\n} finally {\n    System.out.println(\"cleanup\");\n}\n```\n\nCommon questions:\n- What is custom exception types?\n- How do I use custom exception types in Python and Java?\n- Show examples of custom exception types."
+      ]
+    },
+    {
+      "tag": "logging_and_debugging_tools",
+      "patterns": [
+        "Logging & debugging tools",
+        "explain logging & debugging tools",
+        "what is logging & debugging tools"
+      ],
+      "responses": [
+        "Logging And Debugging Tools\nLogging And Debugging Tools: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is logging and debugging tools?\n- How do I use logging and debugging tools in Python and Java?\n- Show examples of logging and debugging tools."
+      ]
+    },
+    {
+      "tag": "assertions",
+      "patterns": [
+        "Assertions",
+        "explain assertions",
+        "what is assertions"
+      ],
+      "responses": [
+        "Assertions\nAssertions: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is assertions?\n- How do I use assertions in Python and Java?\n- Show examples of assertions."
+      ]
+    },
+    {
+      "tag": "reading_and_writing_files",
+      "patterns": [
+        "Reading & writing files",
+        "explain reading & writing files",
+        "what is reading & writing files"
+      ],
+      "responses": [
+        "Reading And Writing Files\nReading And Writing Files: File I/O covers reading from and writing to files, and working with directories and streams.\n\nKey points:\n- Use with/open context managers in Python to ensure files close.\n- In Java use try-with-resources (since Java 7) or Streams APIs.\n- Be mindful of text vs binary modes and encoding (UTF-8).\n\nPython examples:\n```python\n# write and read\nwith open('example.txt','w',encoding='utf-8') as f:\n    f.write('hello')\nwith open('example.txt','r',encoding='utf-8') as f:\n    print(f.read())\n```\n\nJava examples:\n```java\nimport java.nio.file.*;\nFiles.writeString(Path.of(\"example.txt\"), \"hello\");\nSystem.out.println(Files.readString(Path.of(\"example.txt\")));\n```\n\nCommon questions:\n- What is reading and writing files?\n- How do I use reading and writing files in Python and Java?\n- Show examples of reading and writing files."
+      ]
+    },
+    {
+      "tag": "working_with_directories",
+      "patterns": [
+        "Working with directories",
+        "explain working with directories",
+        "what is working with directories"
+      ],
+      "responses": [
+        "Working With Directories\nWorking With Directories: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is working with directories?\n- How do I use working with directories in Python and Java?\n- Show examples of working with directories."
+      ]
+    },
+    {
+      "tag": "streams",
+      "patterns": [
+        "Streams",
+        "explain streams",
+        "what is streams"
+      ],
+      "responses": [
+        "Streams\nStreams: File I/O covers reading from and writing to files, and working with directories and streams.\n\nKey points:\n- Use with/open context managers in Python to ensure files close.\n- In Java use try-with-resources (since Java 7) or Streams APIs.\n- Be mindful of text vs binary modes and encoding (UTF-8).\n\nPython examples:\n```python\n# write and read\nwith open('example.txt','w',encoding='utf-8') as f:\n    f.write('hello')\nwith open('example.txt','r',encoding='utf-8') as f:\n    print(f.read())\n```\n\nJava examples:\n```java\nimport java.nio.file.*;\nFiles.writeString(Path.of(\"example.txt\"), \"hello\");\nSystem.out.println(Files.readString(Path.of(\"example.txt\")));\n```\n\nCommon questions:\n- What is streams?\n- How do I use streams in Python and Java?\n- Show examples of streams."
+      ]
+    },
+    {
+      "tag": "serialization_and_deserialization",
+      "patterns": [
+        "Serialization & deserialization",
+        "explain serialization & deserialization",
+        "what is serialization & deserialization"
+      ],
+      "responses": [
+        "Serialization And Deserialization\nSerialization And Deserialization: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is serialization and deserialization?\n- How do I use serialization and deserialization in Python and Java?\n- Show examples of serialization and deserialization."
+      ]
+    },
+    {
+      "tag": "binary_vs_text_data",
+      "patterns": [
+        "Binary vs text data",
+        "explain binary vs text data",
+        "what is binary vs text data"
+      ],
+      "responses": [
+        "Binary Vs Text Data\nBinary Vs Text Data: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is binary vs text data?\n- How do I use binary vs text data in Python and Java?\n- Show examples of binary vs text data."
+      ]
+    },
+    {
+      "tag": "sockets",
+      "patterns": [
+        "Sockets",
+        "explain sockets",
+        "what is sockets"
+      ],
+      "responses": [
+        "Sockets\nSockets: Networking topics include HTTP requests, sockets, REST APIs, and WebSockets for real-time communication.\n\nKey points:\n- HTTP is request/response; REST is an architectural style for HTTP APIs.\n- Sockets provide low-level network communication.\n- Use libraries (requests in Python, HttpClient/OkHttp in Java) for convenience.\n\nPython examples:\n```python\n# simple HTTP GET with requests\nimport requests\nr = requests.get('https://httpbin.org/get')\nprint(r.status_code, r.json())\n```\n\nJava examples:\n```java\n// Java 11 HttpClient\nimport java.net.http.*;\nHttpClient c = HttpClient.newHttpClient();\nHttpRequest r = HttpRequest.newBuilder(URI.create(\"https://httpbin.org/get\")).build();\nSystem.out.println(c.send(r, HttpResponse.BodyHandlers.ofString()).statusCode());\n```\n\nCommon questions:\n- What is sockets?\n- How do I use sockets in Python and Java?\n- Show examples of sockets."
+      ]
+    },
+    {
+      "tag": "http_requests_and_apis",
+      "patterns": [
+        "HTTP requests & APIs",
+        "explain http requests & apis",
+        "what is http requests & apis"
+      ],
+      "responses": [
+        "Http Requests And Apis\nHttp Requests And Apis: Networking topics include HTTP requests, sockets, REST APIs, and WebSockets for real-time communication.\n\nKey points:\n- HTTP is request/response; REST is an architectural style for HTTP APIs.\n- Sockets provide low-level network communication.\n- Use libraries (requests in Python, HttpClient/OkHttp in Java) for convenience.\n\nPython examples:\n```python\n# simple HTTP GET with requests\nimport requests\nr = requests.get('https://httpbin.org/get')\nprint(r.status_code, r.json())\n```\n\nJava examples:\n```java\n// Java 11 HttpClient\nimport java.net.http.*;\nHttpClient c = HttpClient.newHttpClient();\nHttpRequest r = HttpRequest.newBuilder(URI.create(\"https://httpbin.org/get\")).build();\nSystem.out.println(c.send(r, HttpResponse.BodyHandlers.ofString()).statusCode());\n```\n\nCommon questions:\n- What is http requests and apis?\n- How do I use http requests and apis in Python and Java?\n- Show examples of http requests and apis."
+      ]
+    },
+    {
+      "tag": "websockets",
+      "patterns": [
+        "WebSockets",
+        "explain websockets",
+        "what is websockets"
+      ],
+      "responses": [
+        "Websockets\nWebsockets: Networking topics include HTTP requests, sockets, REST APIs, and WebSockets for real-time communication.\n\nKey points:\n- HTTP is request/response; REST is an architectural style for HTTP APIs.\n- Sockets provide low-level network communication.\n- Use libraries (requests in Python, HttpClient/OkHttp in Java) for convenience.\n\nPython examples:\n```python\n# simple HTTP GET with requests\nimport requests\nr = requests.get('https://httpbin.org/get')\nprint(r.status_code, r.json())\n```\n\nJava examples:\n```java\n// Java 11 HttpClient\nimport java.net.http.*;\nHttpClient c = HttpClient.newHttpClient();\nHttpRequest r = HttpRequest.newBuilder(URI.create(\"https://httpbin.org/get\")).build();\nSystem.out.println(c.send(r, HttpResponse.BodyHandlers.ofString()).statusCode());\n```\n\nCommon questions:\n- What is websockets?\n- How do I use websockets in Python and Java?\n- Show examples of websockets."
+      ]
+    },
+    {
+      "tag": "rest_and_graphql",
+      "patterns": [
+        "REST & GraphQL",
+        "explain rest & graphql",
+        "what is rest & graphql"
+      ],
+      "responses": [
+        "Rest And Graphql\nRest And Graphql: Graphs model pairwise relationships between nodes (vertices). They can be directed/undirected and weighted/unweighted.\n\nKey points:\n- Representations: adjacency list (common) or adjacency matrix.\n- Key algorithms: BFS, DFS, Dijkstra, topological sort.\n- Be careful of cycles and visited sets when traversing.\n\nPython examples:\n```python\n# adjacency list representation\ng = {0: [1,2], 1: [2], 2: [0,3]}\n# simple BFS\nfrom collections import deque\ndef bfs(start):\n    q = deque([start]); seen = {start}\n    while q:\n        v = q.popleft(); print(v)\n        for w in g.get(v,[]):\n            if w not in seen:\n                seen.add(w); q.append(w)\n```\n\nJava examples:\n```java\n// adjacency list using ArrayList<ArrayList<Integer>>\n// BFS/DFS implementation omitted for brevity\n```\n\nCommon questions:\n- What is rest and graphql?\n- How do I use rest and graphql in Python and Java?\n- Show examples of rest and graphql."
+      ]
+    },
+    {
+      "tag": "network_protocols",
+      "patterns": [
+        "Network protocols",
+        "explain network protocols",
+        "what is network protocols"
+      ],
+      "responses": [
+        "Network Protocols\nNetwork Protocols: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is network protocols?\n- How do I use network protocols in Python and Java?\n- Show examples of network protocols."
+      ]
+    },
+    {
+      "tag": "standard_library_usage",
+      "patterns": [
+        "Standard library usage",
+        "explain standard library usage",
+        "what is standard library usage"
+      ],
+      "responses": [
+        "Standard Library Usage\nStandard Library Usage: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is standard library usage?\n- How do I use standard library usage in Python and Java?\n- Show examples of standard library usage."
+      ]
+    },
+    {
+      "tag": "thirdparty_library_integration",
+      "patterns": [
+        "Third-party library integration",
+        "explain third-party library integration",
+        "what is third-party library integration"
+      ],
+      "responses": [
+        "Thirdparty Library Integration\nThirdparty Library Integration: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is thirdparty library integration?\n- How do I use thirdparty library integration in Python and Java?\n- Show examples of thirdparty library integration."
+      ]
+    },
+    {
+      "tag": "package_managers",
+      "patterns": [
+        "Package managers",
+        "explain package managers",
+        "what is package managers"
+      ],
+      "responses": [
+        "Package Managers\nPackage Managers: Modules/packages and dependency management let you organize code and reuse libraries via package managers (pip, Maven/Gradle).\n\nKey points:\n- Structure code into modules and packages to improve maintainability.\n- Use virtual environments for Python to manage dependencies.\n- Java uses build tools (Maven/Gradle) to declare and fetch dependencies.\n\nPython examples:\n```python\n# package structure: mypkg/__init__.py and modules inside\nfrom mypkg import module\n```\n\nJava examples:\n```xml\n<!-- Maven dependency example (pom.xml) -->\n<dependency>\n  <groupId>com.google.guava</groupId>\n  <artifactId>guava</artifactId>\n  <version>31.1-jre</version>\n</dependency>\n```\n\nCommon questions:\n- What is package managers?\n- How do I use package managers in Python and Java?\n- Show examples of package managers."
+      ]
+    },
+    {
+      "tag": "dependency_management",
+      "patterns": [
+        "Dependency management",
+        "explain dependency management",
+        "what is dependency management"
+      ],
+      "responses": [
+        "Dependency Management\nDependency Management: Modules/packages and dependency management let you organize code and reuse libraries via package managers (pip, Maven/Gradle).\n\nKey points:\n- Structure code into modules and packages to improve maintainability.\n- Use virtual environments for Python to manage dependencies.\n- Java uses build tools (Maven/Gradle) to declare and fetch dependencies.\n\nPython examples:\n```python\n# package structure: mypkg/__init__.py and modules inside\nfrom mypkg import module\n```\n\nJava examples:\n```xml\n<!-- Maven dependency example (pom.xml) -->\n<dependency>\n  <groupId>com.google.guava</groupId>\n  <artifactId>guava</artifactId>\n  <version>31.1-jre</version>\n</dependency>\n```\n\nCommon questions:\n- What is dependency management?\n- How do I use dependency management in Python and Java?\n- Show examples of dependency management."
+      ]
+    },
+    {
+      "tag": "memory_safety",
+      "patterns": [
+        "Memory safety",
+        "explain memory safety",
+        "what is memory safety"
+      ],
+      "responses": [
+        "Memory Safety\nMemory Safety: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is memory safety?\n- How do I use memory safety in Python and Java?\n- Show examples of memory safety."
+      ]
+    },
+    {
+      "tag": "modules_and_packages",
+      "patterns": [
+        "Modules & packages",
+        "explain modules & packages",
+        "what is modules & packages"
+      ],
+      "responses": [
+        "Modules And Packages\nModules And Packages: Modules/packages and dependency management let you organize code and reuse libraries via package managers (pip, Maven/Gradle).\n\nKey points:\n- Structure code into modules and packages to improve maintainability.\n- Use virtual environments for Python to manage dependencies.\n- Java uses build tools (Maven/Gradle) to declare and fetch dependencies.\n\nPython examples:\n```python\n# package structure: mypkg/__init__.py and modules inside\nfrom mypkg import module\n```\n\nJava examples:\n```xml\n<!-- Maven dependency example (pom.xml) -->\n<dependency>\n  <groupId>com.google.guava</groupId>\n  <artifactId>guava</artifactId>\n  <version>31.1-jre</version>\n</dependency>\n```\n\nCommon questions:\n- What is modules and packages?\n- How do I use modules and packages in Python and Java?\n- Show examples of modules and packages."
+      ]
+    },
+    {
+      "tag": "decorators",
+      "patterns": [
+        "Decorators",
+        "explain decorators",
+        "what is decorators"
+      ],
+      "responses": [
+        "Decorators\nDecorators: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is decorators?\n- How do I use decorators in Python and Java?\n- Show examples of decorators."
+      ]
+    },
+    {
+      "tag": "enums_and_sealed_classes",
+      "patterns": [
+        "Enums & sealed classes",
+        "explain enums & sealed classes",
+        "what is enums & sealed classes"
+      ],
+      "responses": [
+        "Enums And Sealed Classes\nEnums And Sealed Classes: Object-Oriented Programming (OOP) uses classes as blueprints and objects as instances with state and behavior.\n\nKey points:\n- Class defines attributes and methods; object is an instance of a class.\n- Inheritance lets a class derive from another; polymorphism allows treating objects of different classes through a common interface.\n- Encapsulation hides internal state; abstraction focuses on essential behavior.\n\nPython examples:\n```python\n# Python class example\nclass Car:\n    def __init__(self, color):\n        self.color = color\n    def drive(self):\n        print('driving', self.color)\n\nc = Car('red')\nc.drive()\n```\n```python\n# Inheritance\nclass ElectricCar(Car):\n    def charge(self):\n        print('charging')\n```\n\nJava examples:\n```java\n// Java class and inheritance\npublic class Car {\n    String color;\n    public Car(String color) { this.color = color; }\n    public void drive() { System.out.println(\"driving \" + color); }\n}\n\npublic class ElectricCar extends Car {\n    public ElectricCar(String color) { super(color); }\n    public void charge() { System.out.println(\"charging\"); }\n}\n```\n\nCommon questions:\n- What is enums and sealed classes?\n- How do I use enums and sealed classes in Python and Java?\n- Show examples of enums and sealed classes."
+      ]
+    },
+    {
+      "tag": "coroutines",
+      "patterns": [
+        "Coroutines",
+        "explain coroutines",
+        "what is coroutines"
+      ],
+      "responses": [
+        "Coroutines\nCoroutines: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is coroutines?\n- How do I use coroutines in Python and Java?\n- Show examples of coroutines."
+      ]
+    },
+    {
+      "tag": "preprocessor_directives",
+      "patterns": [
+        "Preprocessor directives",
+        "explain preprocessor directives",
+        "what is preprocessor directives"
+      ],
+      "responses": [
+        "Preprocessor Directives\nPreprocessor Directives: Concurrency covers threads/processes and coordination primitives to run tasks in parallel or concurrently.\n\nKey points:\n- Use threads for concurrent tasks; processes for isolation.\n- Be careful with shared mutable state: use locks or thread-safe structures.\n- Watch for deadlocks and race conditions; design locking order carefully.\n\nPython examples:\n```python\nimport threading\n\ndef work(i):\n    print('work', i)\n\nthreads = []\nfor i in range(3):\n    t = threading.Thread(target=work, args=(i,))\n    t.start(); threads.append(t)\nfor t in threads: t.join()\n```\n\nJava examples:\n```java\nThread t = new Thread(() -> System.out.println(\"working\"));\nt.start();\nt.join();\n```\n\nCommon questions:\n- What is preprocessor directives?\n- How do I use preprocessor directives in Python and Java?\n- Show examples of preprocessor directives."
+      ]
+    },
+    {
+      "tag": "unit_testing",
+      "patterns": [
+        "Unit testing",
+        "explain unit testing",
+        "what is unit testing"
+      ],
+      "responses": [
+        "Unit Testing\nUnit Testing: Testing ensures code correctness. Unit tests check small units; integration tests validate components together.\n\nKey points:\n- Write repeatable, fast unit tests. Use frameworks (unittest/pytest, JUnit).\n- Use mocking to isolate dependencies when needed.\n- Automate tests with CI to catch regressions early.\n\nPython examples:\n```python\n# pytest example\ndef add(a,b): return a+b\n\ndef test_add():\n    assert add(2,3) == 5\n```\n\nJava examples:\n```java\n// JUnit 5 example\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\nclass TestUtil { @Test void t(){ assertEquals(5, 2+3); } }\n```\n\nCommon questions:\n- What is unit testing?\n- How do I use unit testing in Python and Java?\n- Show examples of unit testing."
+      ]
+    },
+    {
+      "tag": "integration_testing",
+      "patterns": [
+        "Integration testing",
+        "explain integration testing",
+        "what is integration testing"
+      ],
+      "responses": [
+        "Integration Testing\nIntegration Testing: Testing ensures code correctness. Unit tests check small units; integration tests validate components together.\n\nKey points:\n- Write repeatable, fast unit tests. Use frameworks (unittest/pytest, JUnit).\n- Use mocking to isolate dependencies when needed.\n- Automate tests with CI to catch regressions early.\n\nPython examples:\n```python\n# pytest example\ndef add(a,b): return a+b\n\ndef test_add():\n    assert add(2,3) == 5\n```\n\nJava examples:\n```java\n// JUnit 5 example\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\nclass TestUtil { @Test void t(){ assertEquals(5, 2+3); } }\n```\n\nCommon questions:\n- What is integration testing?\n- How do I use integration testing in Python and Java?\n- Show examples of integration testing."
+      ]
+    },
+    {
+      "tag": "testdriven_development",
+      "patterns": [
+        "Test-driven development",
+        "explain test-driven development",
+        "what is test-driven development"
+      ],
+      "responses": [
+        "Testdriven Development\nTestdriven Development: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is testdriven development?\n- How do I use testdriven development in Python and Java?\n- Show examples of testdriven development."
+      ]
+    },
+    {
+      "tag": "mocking_and_stubbing",
+      "patterns": [
+        "Mocking & stubbing",
+        "explain mocking & stubbing",
+        "what is mocking & stubbing"
+      ],
+      "responses": [
+        "Mocking And Stubbing\nMocking And Stubbing: Testing ensures code correctness. Unit tests check small units; integration tests validate components together.\n\nKey points:\n- Write repeatable, fast unit tests. Use frameworks (unittest/pytest, JUnit).\n- Use mocking to isolate dependencies when needed.\n- Automate tests with CI to catch regressions early.\n\nPython examples:\n```python\n# pytest example\ndef add(a,b): return a+b\n\ndef test_add():\n    assert add(2,3) == 5\n```\n\nJava examples:\n```java\n// JUnit 5 example\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\nclass TestUtil { @Test void t(){ assertEquals(5, 2+3); } }\n```\n\nCommon questions:\n- What is mocking and stubbing?\n- How do I use mocking and stubbing in Python and Java?\n- Show examples of mocking and stubbing."
+      ]
+    },
+    {
+      "tag": "benchmarking_and_profiling",
+      "patterns": [
+        "Benchmarking & profiling",
+        "explain benchmarking & profiling",
+        "what is benchmarking & profiling"
+      ],
+      "responses": [
+        "Benchmarking And Profiling\nBenchmarking And Profiling: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is benchmarking and profiling?\n- How do I use benchmarking and profiling in Python and Java?\n- Show examples of benchmarking and profiling."
+      ]
+    },
+    {
+      "tag": "code_style_and_formatting",
+      "patterns": [
+        "Code style & formatting",
+        "explain code style & formatting",
+        "what is code style & formatting"
+      ],
+      "responses": [
+        "Code Style And Formatting\nCode Style And Formatting: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is code style and formatting?\n- How do I use code style and formatting in Python and Java?\n- Show examples of code style and formatting."
+      ]
+    },
+    {
+      "tag": "dry_kiss_yagni_principles",
+      "patterns": [
+        "DRY, KISS, YAGNI principles",
+        "explain dry, kiss, yagni principles",
+        "what is dry, kiss, yagni principles"
+      ],
+      "responses": [
+        "Dry Kiss Yagni Principles\nDry Kiss Yagni Principles: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is dry kiss yagni principles?\n- How do I use dry kiss yagni principles in Python and Java?\n- Show examples of dry kiss yagni principles."
+      ]
+    },
+    {
+      "tag": "refactoring",
+      "patterns": [
+        "Refactoring",
+        "explain refactoring",
+        "what is refactoring"
+      ],
+      "responses": [
+        "Refactoring\nRefactoring: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is refactoring?\n- How do I use refactoring in Python and Java?\n- Show examples of refactoring."
+      ]
+    },
+    {
+      "tag": "documentation",
+      "patterns": [
+        "Documentation",
+        "explain documentation",
+        "what is documentation"
+      ],
+      "responses": [
+        "Documentation\nDocumentation: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is documentation?\n- How do I use documentation in Python and Java?\n- Show examples of documentation."
+      ]
+    },
+    {
+      "tag": "version_control",
+      "patterns": [
+        "Version control",
+        "explain version control",
+        "what is version control"
+      ],
+      "responses": [
+        "Version Control\nVersion Control: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is version control?\n- How do I use version control in Python and Java?\n- Show examples of version control."
+      ]
+    },
+    {
+      "tag": "compilers_and_interpreters",
+      "patterns": [
+        "Compilers & interpreters",
+        "explain compilers & interpreters",
+        "what is compilers & interpreters"
+      ],
+      "responses": [
+        "Compilers And Interpreters\nCompilers And Interpreters: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is compilers and interpreters?\n- How do I use compilers and interpreters in Python and Java?\n- Show examples of compilers and interpreters."
+      ]
+    },
+    {
+      "tag": "virtual_machines",
+      "patterns": [
+        "Virtual machines",
+        "explain virtual machines",
+        "what is virtual machines"
+      ],
+      "responses": [
+        "Virtual Machines\nVirtual Machines: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is virtual machines?\n- How do I use virtual machines in Python and Java?\n- Show examples of virtual machines."
+      ]
+    },
+    {
+      "tag": "justintime_compilation",
+      "patterns": [
+        "Just-in-time compilation",
+        "explain just-in-time compilation",
+        "what is just-in-time compilation"
+      ],
+      "responses": [
+        "Justintime Compilation\nJustintime Compilation: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is justintime compilation?\n- How do I use justintime compilation in Python and Java?\n- Show examples of justintime compilation."
+      ]
+    },
+    {
+      "tag": "language_internals_and_parsing",
+      "patterns": [
+        "Language internals & parsing",
+        "explain language internals & parsing",
+        "what is language internals & parsing"
+      ],
+      "responses": [
+        "Language Internals And Parsing\nLanguage Internals And Parsing: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is language internals and parsing?\n- How do I use language internals and parsing in Python and Java?\n- Show examples of language internals and parsing."
+      ]
+    },
+    {
+      "tag": "design_patterns",
+      "patterns": [
+        "Design patterns",
+        "explain design patterns",
+        "what is design patterns"
+      ],
+      "responses": [
+        "Design Patterns\nDesign Patterns: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is design patterns?\n- How do I use design patterns in Python and Java?\n- Show examples of design patterns."
+      ]
+    },
+    {
+      "tag": "domainspecific_languages",
+      "patterns": [
+        "Domain-specific languages",
+        "explain domain-specific languages",
+        "what is domain-specific languages"
+      ],
+      "responses": [
+        "Domainspecific Languages\nDomainspecific Languages: A programming concept. Below are concise examples in Python and Java to illustrate the idea.\n\nKey points:\n- Read the examples to see practical usage.\n- Ask me follow-up questions for clarification.\n\nPython examples:\n```python\n# Python: simple example\nprint('Hello from Python')\n```\n\nJava examples:\n```java\n// Java: simple example\npublic class Main { public static void main(String[] args) { System.out.println(\"Hello from Java\"); } }\n```\n\nCommon questions:\n- What is domainspecific languages?\n- How do I use domainspecific languages in Python and Java?\n- Show examples of domainspecific languages."
       ]
     }
   ]
