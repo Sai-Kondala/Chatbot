@@ -6,19 +6,29 @@
         "startup",
         "help",
         "what can you do",
-        "startup message",
-        "startup message in python",
-        "startup message in java",
-        "what is startup message",
-        "explain startup message"
+        "startup message"
       ],
       "responses": [
-        "Welcome to the Programming Helper Bot! \ud83e\udd16\n\nI can help you with basic concepts in Python and Java. Here are some of the topics I know about:\n\n**Python Topics:**\n- Variables & Data Types\n- For Loops\n- Functions\n\n**Java Topics:**\n- Variables & Data Types\n- Methods\n- Classes & Objects\n\nTo get started, feel free to ask a question like, *'explain for loops python'* or *'what is a class in java'*."
+        "Welcome to the Programming Helper Bot! I can help you with basic concepts in Python and Java. To see a full list of what I know, just ask 'what topics do you have?'"
+      ]
+    },
+    {
+      "tag": "topics_available",
+      "patterns": [
+        "topics you have",
+        "topics",
+        "what can you answer",
+        "list all topics",
+        "give me some example questions",
+        "what can I ask",
+        "suggest a question"
+      ],
+      "responses": [
+        "Here are all the topics I can currently help you with:\n- Greeting\n- Goodbye\n- Thanks\n- Python Variables\n- Python Data Types\n- Python For Loops\n- Python Functions\n- Java Variables\n- Java Data Types\n- Java Methods\n- Java Classes & Objects"
       ]
     },
     {
       "tag": "greeting",
-      "difficulty": "beginner",
       "patterns": [
         "hi",
         "hey",
@@ -27,14 +37,10 @@
         "greetings",
         "is anyone there?",
         "what's up",
-        "greeting",
-        "greeting in python",
-        "greeting in java",
-        "what is greeting",
-        "explain greeting"
+        "greeting"
       ],
       "responses": [
-        "Hello! How can I help you with your Java or Python questions today? \ud83e\udd16",
+        "Hello! How can I help you with your Java or Python questions today?",
         "Hey there! Ready to tackle some programming concepts?",
         "Hi! What can I teach you about Java or Python?",
         "Greetings! Ask me anything about Java or Python. I'm ready to help."
@@ -42,21 +48,16 @@
     },
     {
       "tag": "goodbye",
-      "difficulty": "beginner",
       "patterns": [
         "bye",
         "see you later",
         "goodbye",
         "talk to you later",
         "I have to go",
-        "that's all",
-        "goodbye in python",
-        "goodbye in java",
-        "what is goodbye",
-        "explain goodbye"
+        "that's all"
       ],
       "responses": [
-        "Goodbye! Happy coding! \ud83d\udc4b",
+        "Goodbye! Happy coding!",
         "See you later! Keep up the great learning.",
         "Bye! Don't hesitate to ask if you have more questions in the future.",
         "Talk to you later! Have a great day."
@@ -64,1762 +65,144 @@
     },
     {
       "tag": "thanks",
-      "difficulty": "beginner",
       "patterns": [
         "thanks",
         "thank you",
         "that's helpful",
         "awesome, thanks",
         "great, thank you",
-        "thanks a lot",
-        "thanks in python",
-        "thanks in java",
-        "what is thanks",
-        "explain thanks"
+        "thanks a lot"
       ],
       "responses": [
-        "You're very welcome! \ud83d\udc4d",
+        "You're very welcome!",
         "Happy to help! Is there anything else you'd like to know?",
         "Glad I could be of assistance.",
         "Anytime! Let me know if there's anything else."
       ]
     },
     {
-      "tag": "startup_message",
-      "difficulty": "beginner",
-      "patterns": [
-        "startup",
-        "help",
-        "what can you do",
-        "startup message",
-        "startup message in python",
-        "startup message in java",
-        "what is startup message",
-        "explain startup message"
-      ],
-      "responses": [
-        "Welcome! I'm here to help you with Java and Python concepts. I can answer your questions about variables, data types, loops, functions, and more. \n\nYou can start by asking me things like:\n- 'How to create a variable in Python?'\n- 'What are the primitive data types in Java?'\n- 'Tell me about Python lists.'"
-      ]
-    },
-    {
-      "tag": "example_questions",
-      "difficulty": "beginner",
-      "patterns": [
-        "give me some example questions",
-        "what can I ask",
-        "suggest a question",
-        "what should I ask",
-        "example questions",
-        "example questions in python",
-        "example questions in java",
-        "what is example questions",
-        "explain example questions"
-      ],
-      "responses": [
-        "Of course! You could ask something like:\n- 'How do I create a list in Python?'\n- 'What is the difference between `int` and `double` in Java?'\n- 'Can you show me a `for` loop in Python?'\n- 'How do I declare an array in Java?'"
-      ]
-    },
-    {
-      "tag": "python_variables_1",
-      "difficulty": "beginner",
+      "tag": "python_variables",
       "patterns": [
         "python variables",
         "how to create variable in python",
-        "example question 1",
-        "variables 1",
-        "variables 1 in python",
-        "variables 1 in java",
-        "what is variables 1",
-        "explain variables 1"
+        "declare python variable",
+        "assign value in python"
       ],
       "responses": [
         "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
       ]
     },
     {
-      "tag": "python_data_types_2",
-      "difficulty": "beginner",
+      "tag": "python_data_types",
       "patterns": [
-        "data types",
         "python data types",
         "basic types python",
-        "example question 2",
-        "data types 2",
-        "data types 2 in python",
-        "data types 2 in java",
-        "what is data types 2",
-        "explain data types 2"
+        "what are python data types",
+        "python list",
+        "python dictionary",
+        "python tuple",
+        "python set"
       ],
       "responses": [
         "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
       ]
     },
     {
-      "tag": "python_variables_3",
-      "difficulty": "beginner",
+      "tag": "python_for_loop",
       "patterns": [
-        "variables",
-        "python variables",
-        "how to create variable in python",
-        "example question 3",
-        "variables 3",
-        "variables 3 in python",
-        "variables 3 in java",
-        "what is variables 3",
-        "explain variables 3"
+        "python for loop",
+        "for loop in python",
+        "how to write a for loop python",
+        "iterate over a list in python",
+        "python loop through list",
+        "explain for loops python",
+        "how do for loops work in python"
       ],
       "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
+        "In Python, a 'for' loop is used for iterating over a sequence (like a list, tuple, or string). The basic syntax is: `for item in sequence:`",
+        "Here is a simple example that prints numbers 0 to 4:\n```python\nfor i in range(5):\n    print(i)\n```",
+        "To loop over a list, you can do this:\n```python\nmy_list = ['apple', 'banana', 'cherry']\nfor fruit in my_list:\n    print(fruit)\n```"
       ]
     },
     {
-      "tag": "python_data_types_4",
-      "difficulty": "beginner",
+      "tag": "python_functions",
       "patterns": [
-        "data types",
-        "python data types",
-        "basic types python",
-        "example question 4",
-        "data types 4",
-        "data types 4 in python",
-        "data types 4 in java",
-        "what is data types 4",
-        "explain data types 4"
+        "python function",
+        "define a function in python",
+        "how to create python functions",
+        "python def keyword",
+        "call a function python"
       ],
       "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
+        "Functions in Python are defined using the `def` keyword, followed by the function name and parentheses `()`. The code block within every function starts with a colon `:` and is indented.",
+        "Here is how you define a simple function:\n```python\ndef greet():\n    print(\"Hello from a function!\")\n```",
+        "To call the function, you just use its name followed by parentheses:\n```python\ngreet() # This will print \"Hello from a function!\"\n```",
+        "You can also pass data, known as parameters, into a function:\n```python\ndef greet_person(name):\n    print(f\"Hello, {name}!\")\n\ngreet_person(\"Alice\") # Prints \"Hello, Alice!\"\n```"
       ]
     },
     {
-      "tag": "python_variables_5",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 5",
-        "variables 5",
-        "variables 5 in python",
-        "variables 5 in java",
-        "what is variables 5",
-        "explain variables 5"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_6",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 6",
-        "data types 6",
-        "data types 6 in python",
-        "data types 6 in java",
-        "what is data types 6",
-        "explain data types 6"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_7",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 7",
-        "variables 7",
-        "variables 7 in python",
-        "variables 7 in java",
-        "what is variables 7",
-        "explain variables 7"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_8",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 8",
-        "data types 8",
-        "data types 8 in python",
-        "data types 8 in java",
-        "what is data types 8",
-        "explain data types 8"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_9",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 9",
-        "variables 9",
-        "variables 9 in python",
-        "variables 9 in java",
-        "what is variables 9",
-        "explain variables 9"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_10",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 10",
-        "data types 10",
-        "data types 10 in python",
-        "data types 10 in java",
-        "what is data types 10",
-        "explain data types 10"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_11",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 11",
-        "variables 11",
-        "variables 11 in python",
-        "variables 11 in java",
-        "what is variables 11",
-        "explain variables 11"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_12",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 12",
-        "data types 12",
-        "data types 12 in python",
-        "data types 12 in java",
-        "what is data types 12",
-        "explain data types 12"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_13",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 13",
-        "variables 13",
-        "variables 13 in python",
-        "variables 13 in java",
-        "what is variables 13",
-        "explain variables 13"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_14",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 14",
-        "data types 14",
-        "data types 14 in python",
-        "data types 14 in java",
-        "what is data types 14",
-        "explain data types 14"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_15",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 15",
-        "variables 15",
-        "variables 15 in python",
-        "variables 15 in java",
-        "what is variables 15",
-        "explain variables 15"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_16",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 16",
-        "data types 16",
-        "data types 16 in python",
-        "data types 16 in java",
-        "what is data types 16",
-        "explain data types 16"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_17",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 17",
-        "variables 17",
-        "variables 17 in python",
-        "variables 17 in java",
-        "what is variables 17",
-        "explain variables 17"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_18",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 18",
-        "data types 18",
-        "data types 18 in python",
-        "data types 18 in java",
-        "what is data types 18",
-        "explain data types 18"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_19",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 19",
-        "variables 19",
-        "variables 19 in python",
-        "variables 19 in java",
-        "what is variables 19",
-        "explain variables 19"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_20",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 20",
-        "data types 20",
-        "data types 20 in python",
-        "data types 20 in java",
-        "what is data types 20",
-        "explain data types 20"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_21",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 21",
-        "variables 21",
-        "variables 21 in python",
-        "variables 21 in java",
-        "what is variables 21",
-        "explain variables 21"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_22",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 22",
-        "data types 22",
-        "data types 22 in python",
-        "data types 22 in java",
-        "what is data types 22",
-        "explain data types 22"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_23",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 23",
-        "variables 23",
-        "variables 23 in python",
-        "variables 23 in java",
-        "what is variables 23",
-        "explain variables 23"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_24",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 24",
-        "data types 24",
-        "data types 24 in python",
-        "data types 24 in java",
-        "what is data types 24",
-        "explain data types 24"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_25",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 25",
-        "variables 25",
-        "variables 25 in python",
-        "variables 25 in java",
-        "what is variables 25",
-        "explain variables 25"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_26",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 26",
-        "data types 26",
-        "data types 26 in python",
-        "data types 26 in java",
-        "what is data types 26",
-        "explain data types 26"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_27",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 27",
-        "variables 27",
-        "variables 27 in python",
-        "variables 27 in java",
-        "what is variables 27",
-        "explain variables 27"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_28",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 28",
-        "data types 28",
-        "data types 28 in python",
-        "data types 28 in java",
-        "what is data types 28",
-        "explain data types 28"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_29",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 29",
-        "variables 29",
-        "variables 29 in python",
-        "variables 29 in java",
-        "what is variables 29",
-        "explain variables 29"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_30",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 30",
-        "data types 30",
-        "data types 30 in python",
-        "data types 30 in java",
-        "what is data types 30",
-        "explain data types 30"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_31",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 31",
-        "variables 31",
-        "variables 31 in python",
-        "variables 31 in java",
-        "what is variables 31",
-        "explain variables 31"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_32",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 32",
-        "data types 32",
-        "data types 32 in python",
-        "data types 32 in java",
-        "what is data types 32",
-        "explain data types 32"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_33",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 33",
-        "variables 33",
-        "variables 33 in python",
-        "variables 33 in java",
-        "what is variables 33",
-        "explain variables 33"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_34",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 34",
-        "data types 34",
-        "data types 34 in python",
-        "data types 34 in java",
-        "what is data types 34",
-        "explain data types 34"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_35",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 35",
-        "variables 35",
-        "variables 35 in python",
-        "variables 35 in java",
-        "what is variables 35",
-        "explain variables 35"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_36",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 36",
-        "data types 36",
-        "data types 36 in python",
-        "data types 36 in java",
-        "what is data types 36",
-        "explain data types 36"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_37",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 37",
-        "variables 37",
-        "variables 37 in python",
-        "variables 37 in java",
-        "what is variables 37",
-        "explain variables 37"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_38",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 38",
-        "data types 38",
-        "data types 38 in python",
-        "data types 38 in java",
-        "what is data types 38",
-        "explain data types 38"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_39",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 39",
-        "variables 39",
-        "variables 39 in python",
-        "variables 39 in java",
-        "what is variables 39",
-        "explain variables 39"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_40",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 40",
-        "data types 40",
-        "data types 40 in python",
-        "data types 40 in java",
-        "what is data types 40",
-        "explain data types 40"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_41",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 41",
-        "variables 41",
-        "variables 41 in python",
-        "variables 41 in java",
-        "what is variables 41",
-        "explain variables 41"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_42",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 42",
-        "data types 42",
-        "data types 42 in python",
-        "data types 42 in java",
-        "what is data types 42",
-        "explain data types 42"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_43",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 43",
-        "variables 43",
-        "variables 43 in python",
-        "variables 43 in java",
-        "what is variables 43",
-        "explain variables 43"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_44",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 44",
-        "data types 44",
-        "data types 44 in python",
-        "data types 44 in java",
-        "what is data types 44",
-        "explain data types 44"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_45",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 45",
-        "variables 45",
-        "variables 45 in python",
-        "variables 45 in java",
-        "what is variables 45",
-        "explain variables 45"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_46",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 46",
-        "data types 46",
-        "data types 46 in python",
-        "data types 46 in java",
-        "what is data types 46",
-        "explain data types 46"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_47",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 47",
-        "variables 47",
-        "variables 47 in python",
-        "variables 47 in java",
-        "what is variables 47",
-        "explain variables 47"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_48",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 48",
-        "data types 48",
-        "data types 48 in python",
-        "data types 48 in java",
-        "what is data types 48",
-        "explain data types 48"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "python_variables_49",
-      "difficulty": "beginner",
-      "patterns": [
-        "python variables",
-        "how to create variable in python",
-        "example question 49",
-        "variables 49",
-        "variables 49 in python",
-        "variables 49 in java",
-        "what is variables 49",
-        "explain variables 49"
-      ],
-      "responses": [
-        "In Python, variables are like containers for storing data. Python uses dynamic typing, meaning you don't need to declare a variable's type. A variable is created the moment you first assign a value to it.\n\nFor example:\n```python\n# An integer variable\nx = 10\n\n# A string variable\nname = 'Alice'\n\n# The type can even be changed later\nx = 'Now I am a string'\n```"
-      ]
-    },
-    {
-      "tag": "python_data_types_50",
-      "difficulty": "beginner",
-      "patterns": [
-        "python data types",
-        "basic types python",
-        "example question 50",
-        "data types 50",
-        "data types 50 in python",
-        "data types 50 in java",
-        "what is data types 50",
-        "explain data types 50"
-      ],
-      "responses": [
-        "Python has several built-in data types. The most common are:\n- **Text:** `str` (e.g., 'Hello')\n- **Numeric:** `int` (e.g., 20), `float` (e.g., 20.5)\n- **Sequence:** `list` (e.g., ['apple', 'banana']), `tuple`\n- **Mapping:** `dict` (e.g., {'name': 'John', 'age': 36})\n- **Set:** `set` (e.g., {'apple', 'banana'})\n- **Boolean:** `bool` (`True` or `False`)\n\nYou can check a variable's type with the `type()` function: `print(type('Hello'))` will output `<class 'str'>`."
-      ]
-    },
-    {
-      "tag": "java_variables_1",
-      "difficulty": "beginner",
+      "tag": "java_variables",
       "patterns": [
         "java variables",
-        "declare variable java",
-        "example question 1",
-        "variables 1",
-        "variables 1 in python",
-        "variables 1 in java",
-        "what is variables 1",
-        "explain variables 1"
+        "declare variable in java",
+        "java integer variable",
+        "java string variable",
+        "how to make a variable in java",
+        "explain java variables"
       ],
       "responses": [
         "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
       ]
     },
-    {
-      "tag": "java_data_types_2",
-      "difficulty": "beginner",
+     {
+      "tag": "java_data_types",
       "patterns": [
         "java data types",
         "primitive types java",
-        "example question 2",
-        "data types 2",
-        "data types 2 in python",
-        "data types 2 in java",
-        "what is data types 2",
-        "explain data types 2"
+        "what are java data types",
+        "java int vs double",
+        "java array"
       ],
       "responses": [
         "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
       ]
     },
     {
-      "tag": "java_variables_3",
-      "difficulty": "beginner",
+      "tag": "java_methods",
       "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 3",
-        "variables 3",
-        "variables 3 in python",
-        "variables 3 in java",
-        "what is variables 3",
-        "explain variables 3"
+        "java method",
+        "what is a method in java",
+        "create a java method",
+        "how to call a method in java",
+        "explain java methods"
       ],
       "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
+        "A method in Java is a block of code that runs only when it is called. It's similar to a function in other languages. You can pass data, known as parameters, into a method.",
+        "Here is how you define a simple method within a class:\n```java\npublic class Main {\n  static void myMethod() {\n    System.out.println(\"Hello from myMethod!\");\n  }\n}\n```",
+        "To call the method, you use its name followed by parentheses and a semicolon:\n```java\nmyMethod(); // This will print \"Hello from myMethod!\"\n```"
       ]
     },
     {
-      "tag": "java_data_types_4",
-      "difficulty": "beginner",
+      "tag": "java_classes_objects",
       "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 4",
-        "data types 4",
-        "data types 4 in python",
-        "data types 4 in java",
-        "what is data types 4",
-        "explain data types 4"
+        "java class",
+        "java object",
+        "what is a class in java",
+        "explain java objects",
+        "class vs object in java"
       ],
       "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
+        "Java is an object-oriented programming language. Everything in Java is associated with classes and objects.",
+        "A Class is like a blueprint for creating objects. For example, you could have a `Car` class with variables like `color` and `model`.",
+        "An Object is an instance of a class. From the `Car` class blueprint, you could create actual car objects, like a red Ford or a blue Honda.",
+        "Here is a simple example:\n```java\n// This is the class (blueprint)\npublic class Car {\n  String color = \"red\";\n}\n\n// To create an object from the class:\nCar myCar = new Car();\nSystem.out.println(myCar.color); // Prints \"red\"\n```"
       ]
     },
     {
-      "tag": "java_variables_5",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 5",
-        "variables 5",
-        "variables 5 in python",
-        "variables 5 in java",
-        "what is variables 5",
-        "explain variables 5"
-      ],
+      "tag": "fallback",
+      "patterns": ["a", "b", "c"],
       "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_6",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 6",
-        "data types 6",
-        "data types 6 in python",
-        "data types 6 in java",
-        "what is data types 6",
-        "explain data types 6"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_7",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 7",
-        "variables 7",
-        "variables 7 in python",
-        "variables 7 in java",
-        "what is variables 7",
-        "explain variables 7"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_8",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 8",
-        "data types 8",
-        "data types 8 in python",
-        "data types 8 in java",
-        "what is data types 8",
-        "explain data types 8"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_9",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 9",
-        "variables 9",
-        "variables 9 in python",
-        "variables 9 in java",
-        "what is variables 9",
-        "explain variables 9"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_10",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 10",
-        "data types 10",
-        "data types 10 in python",
-        "data types 10 in java",
-        "what is data types 10",
-        "explain data types 10"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_11",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 11",
-        "variables 11",
-        "variables 11 in python",
-        "variables 11 in java",
-        "what is variables 11",
-        "explain variables 11"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_12",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 12",
-        "data types 12",
-        "data types 12 in python",
-        "data types 12 in java",
-        "what is data types 12",
-        "explain data types 12"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_13",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 13",
-        "variables 13",
-        "variables 13 in python",
-        "variables 13 in java",
-        "what is variables 13",
-        "explain variables 13"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_14",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 14",
-        "data types 14",
-        "data types 14 in python",
-        "data types 14 in java",
-        "what is data types 14",
-        "explain data types 14"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_15",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 15",
-        "variables 15",
-        "variables 15 in python",
-        "variables 15 in java",
-        "what is variables 15",
-        "explain variables 15"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_16",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 16",
-        "data types 16",
-        "data types 16 in python",
-        "data types 16 in java",
-        "what is data types 16",
-        "explain data types 16"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_17",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 17",
-        "variables 17",
-        "variables 17 in python",
-        "variables 17 in java",
-        "what is variables 17",
-        "explain variables 17"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_18",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 18",
-        "data types 18",
-        "data types 18 in python",
-        "data types 18 in java",
-        "what is data types 18",
-        "explain data types 18"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_19",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 19",
-        "variables 19",
-        "variables 19 in python",
-        "variables 19 in java",
-        "what is variables 19",
-        "explain variables 19"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_20",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 20",
-        "data types 20",
-        "data types 20 in python",
-        "data types 20 in java",
-        "what is data types 20",
-        "explain data types 20"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_21",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 21",
-        "variables 21",
-        "variables 21 in python",
-        "variables 21 in java",
-        "what is variables 21",
-        "explain variables 21"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_22",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 22",
-        "data types 22",
-        "data types 22 in python",
-        "data types 22 in java",
-        "what is data types 22",
-        "explain data types 22"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_23",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 23",
-        "variables 23",
-        "variables 23 in python",
-        "variables 23 in java",
-        "what is variables 23",
-        "explain variables 23"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_24",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 24",
-        "data types 24",
-        "data types 24 in python",
-        "data types 24 in java",
-        "what is data types 24",
-        "explain data types 24"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_25",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 25",
-        "variables 25",
-        "variables 25 in python",
-        "variables 25 in java",
-        "what is variables 25",
-        "explain variables 25"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_26",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 26",
-        "data types 26",
-        "data types 26 in python",
-        "data types 26 in java",
-        "what is data types 26",
-        "explain data types 26"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_27",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 27",
-        "variables 27",
-        "variables 27 in python",
-        "variables 27 in java",
-        "what is variables 27",
-        "explain variables 27"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_28",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 28",
-        "data types 28",
-        "data types 28 in python",
-        "data types 28 in java",
-        "what is data types 28",
-        "explain data types 28"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_29",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 29",
-        "variables 29",
-        "variables 29 in python",
-        "variables 29 in java",
-        "what is variables 29",
-        "explain variables 29"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_30",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 30",
-        "data types 30",
-        "data types 30 in python",
-        "data types 30 in java",
-        "what is data types 30",
-        "explain data types 30"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_31",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 31",
-        "variables 31",
-        "variables 31 in python",
-        "variables 31 in java",
-        "what is variables 31",
-        "explain variables 31"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_32",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 32",
-        "data types 32",
-        "data types 32 in python",
-        "data types 32 in java",
-        "what is data types 32",
-        "explain data types 32"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_33",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 33",
-        "variables 33",
-        "variables 33 in python",
-        "variables 33 in java",
-        "what is variables 33",
-        "explain variables 33"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_34",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 34",
-        "data types 34",
-        "data types 34 in python",
-        "data types 34 in java",
-        "what is data types 34",
-        "explain data types 34"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_35",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 35",
-        "variables 35",
-        "variables 35 in python",
-        "variables 35 in java",
-        "what is variables 35",
-        "explain variables 35"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_36",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 36",
-        "data types 36",
-        "data types 36 in python",
-        "data types 36 in java",
-        "what is data types 36",
-        "explain data types 36"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_37",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 37",
-        "variables 37",
-        "variables 37 in python",
-        "variables 37 in java",
-        "what is variables 37",
-        "explain variables 37"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_38",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 38",
-        "data types 38",
-        "data types 38 in python",
-        "data types 38 in java",
-        "what is data types 38",
-        "explain data types 38"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_39",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 39",
-        "variables 39",
-        "variables 39 in python",
-        "variables 39 in java",
-        "what is variables 39",
-        "explain variables 39"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_40",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 40",
-        "data types 40",
-        "data types 40 in python",
-        "data types 40 in java",
-        "what is data types 40",
-        "explain data types 40"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_41",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 41",
-        "variables 41",
-        "variables 41 in python",
-        "variables 41 in java",
-        "what is variables 41",
-        "explain variables 41"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_42",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 42",
-        "data types 42",
-        "data types 42 in python",
-        "data types 42 in java",
-        "what is data types 42",
-        "explain data types 42"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_43",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 43",
-        "variables 43",
-        "variables 43 in python",
-        "variables 43 in java",
-        "what is variables 43",
-        "explain variables 43"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_44",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 44",
-        "data types 44",
-        "data types 44 in python",
-        "data types 44 in java",
-        "what is data types 44",
-        "explain data types 44"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_45",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 45",
-        "variables 45",
-        "variables 45 in python",
-        "variables 45 in java",
-        "what is variables 45",
-        "explain variables 45"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_46",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 46",
-        "data types 46",
-        "data types 46 in python",
-        "data types 46 in java",
-        "what is data types 46",
-        "explain data types 46"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_47",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 47",
-        "variables 47",
-        "variables 47 in python",
-        "variables 47 in java",
-        "what is variables 47",
-        "explain variables 47"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_48",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 48",
-        "data types 48",
-        "data types 48 in python",
-        "data types 48 in java",
-        "what is data types 48",
-        "explain data types 48"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
-      ]
-    },
-    {
-      "tag": "java_variables_49",
-      "difficulty": "beginner",
-      "patterns": [
-        "java variables",
-        "declare variable java",
-        "example question 49",
-        "variables 49",
-        "variables 49 in python",
-        "variables 49 in java",
-        "what is variables 49",
-        "explain variables 49"
-      ],
-      "responses": [
-        "In Java, variables must be declared with a specific data type because it is a statically-typed language. This helps prevent errors. The syntax is `type variableName = value;`.\n\nFor example:\n```java\n// An integer variable for whole numbers\nint age = 25;\n\n// A String variable for text (String is a class)\nString name = \"Alice\";\n\n// A double for numbers with decimal points\ndouble salary = 65000.50;\n```"
-      ]
-    },
-    {
-      "tag": "java_data_types_50",
-      "difficulty": "beginner",
-      "patterns": [
-        "java data types",
-        "primitive types java",
-        "example question 50",
-        "data types 50",
-        "data types 50 in python",
-        "data types 50 in java",
-        "what is data types 50",
-        "explain data types 50"
-      ],
-      "responses": [
-        "Java data types are split into two groups:\n\n1.  **Primitive Types:** These are the fundamental types. There are 8: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.\n\n2.  **Non-Primitive Types (Reference Types):** These refer to objects. Examples include `String`, `Arrays`, and any `Class` you create.\n\nHere's an example:\n```java\n// Primitive types\nint num = 10;\nboolean flag = true;\n\n// Non-primitive type\nString greeting = \"Hello\";\n```"
+        "I'm sorry, I don't have information on that specific topic yet. You can try asking about topics like 'python for loop', 'java variables', or 'python functions'."
       ]
     }
   ]
