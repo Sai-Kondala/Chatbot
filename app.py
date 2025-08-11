@@ -7,14 +7,24 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 # --- One-time NLTK data download for deployment ---
+
+# punkt tokenizer
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+
+# wordnet corpus
 try:
     nltk.data.find('corpora/wordnet')
 except LookupError:
     nltk.download('wordnet')
+
+# omw-1.4 corpus (needed for WordNet lemmatizer)
+try:
+    nltk.data.find('corpora/omw-1.4')
+except LookupError:
+    nltk.download('omw-1.4')
 # --- End of download section ---
 
 
